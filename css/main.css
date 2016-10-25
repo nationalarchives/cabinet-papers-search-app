@@ -238,7 +238,7 @@ input[type="text"] {
     font-size: 16px;
     font-weight: 400;
     padding: 10px;
-    width: 69%;
+    width: 63%;
 }
 
 input.date {
@@ -266,6 +266,11 @@ span.moreOption {
 
 span.moreOption a {
     color: midnightblue;
+}
+
+i {
+    color: #9f1806;
+    float: right;
 }
 
 @media screen and (max-width: 650px) {
