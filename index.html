@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <title>Cabinet Papers search app</title>
 
@@ -23,81 +24,14 @@
 <body>
 
 <main>
-    <h1>Search</h1>
-    <input id="tab1" type="radio" name="tabs" checked>
-    <label for="tab1">Cabinet papers</label>
-
-    <input id="tab2" type="radio" name="tabs">
-    <label for="tab2">Education resources</label>
-
-
-    <section id="content1">
-
-        <div class="breather">
-            <form action="#">
-                <!--<h4>Find results with</h4>-->
-                <!--<label class="main firstLabel" for="allwords">All of these words</label>-->
-                <input type="text" id="allwords" name="allofthesewords" class="firstField" placeholder="Eg. Government of Ireland bill">
-                <span class="moreOption"><a class="button" href="#">More search options</a></span>
-                <div class="clear"></div>
-
-                <div class="subFields">
-                    <label class="main" for="exactwords">Find results with the exact phrase</label>
-                    <input type="text" id="exactwords" name="exactwords">
-
-                    <!--<div class="clear">-->
-                        <!--<span class="main" for="">and / or</span>-->
-                    <!--</div>-->
-                    <p>and / or</p>
-
-                    <label class="main" for="anywords">Find results with any of these words</label>
-                    <input type="text" id="anywords" name="anywords">
-                </div>
-
-                <hr>
-
-                <label class="main">Filter by document type</label>
-                    <div class="filter">
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="" checked=checked>All</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="">Memoranda</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="">Conclusions</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="">Precedent Books</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" value="">Notebooks</label>
-                        </div>
-                    </div>
-                <div class="clear"></div>
-
-                <hr>
-
-                <div class="dateSection">
-                    <label class="main">Date</label>
-                    <input type="text" id="anywords" class="date" name="anywords">
-                    <span>to</span>
-                    <input type="text" id="anywords" class="date" name="anywords">
-                </div>
-                <div class="clear"></div>
-                <input type="submit" value="Search">
-            </form>
-        </div>
-    </section>
-
-    <section id="content2">
-        <form action="#">
-            <label for="fname">Search by word or phrase *</label>
-            <input type="text" id="allwords" name="allofthesewords">
-
-            <input type="submit" value="Search">
-        </form>
-    </section>
+    <div>
+        <input id="box1" type="checkbox" />
+        <label for="box1">Checkbox 1</label>
+        <input id="box2" type="checkbox" />
+        <label for="box2">Checkbox 2</label>
+        <input id="box3" type="checkbox" />
+        <label for="box3">Checkbox 3</label>
+    </div>
 
 </main>
 
