@@ -1,0 +1,788 @@
+/* ------------- version 26-08-2008, updated 17-11-2008 ----------*/
+
+@charset "UTF-8";
+/* 
+Cabinet Papers website, The National Archives
+Author: Sarah Macbeth, wave design cooperative, July 2008
+Updated by Roumiana Kurktchian, rumi@arcsoft.ltd.uk, November 2008
+*/
+/*COLOUR GUIDE
+Dark grey (text): #333
+Mid grey (dividers): #666
+Light grey: #CCC
+Very light grey (backgrounds, borders):#ebeaea
+Dark Blue (links): #00529b
+Red (buttons): #e42418
+Beige (menus, icons) #b5ac96
+New beige replacement (colour contrast friendly) #5e5653
+*/
+
+/* ---------->>> GLOBAL <<<-----------*/
+
+body    {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    background-color:#fff;
+}
+
+div#header {background-color:#fff;font-size:100%;}
+div#utility {font-family: Verdana, Arial, Helvetica, sans-serif;font-size:110%;}
+div#mainnavigation{}
+div#ftr{font-family: Verdana, Arial, Helvetica, sans-serif;font-size:85%;line-height:180%;position:absolute;}
+/* IE6 POSITIONING HACK - NEEDED FOR IE6 ONLY */
+html>body div#ftr{position:relative;}
+/* IE7 ONLY */
+html>body div#ftr{*position:static;}
+
+div#personal{font-family: Verdana, Arial, Helvetica, sans-serif; padding:27px 8px 0 0; font-weight: bold; color: #666633; text-align:right; font-size:110%;}
+#ftr-footer-spacer {}
+#ftr-footer-links-wrapper {}
+#ftr-footer-links-wrapper div {}
+#ftr-footer-links-wrapper h4 {font-size:130%;padding:0 0 0 10px; margin:0 0 0 0; font-weight:700; font-family:Verdana, Arial, Helvetica, sans-serif;}
+#ftr-footer-links-wrapper ul {font-size:110%;}
+#ftr-footer-contact-bar {font-size:110%;}
+
+#container    {
+    width:960px;
+    margin: 0 auto;
+    padding:0;    
+    background-color:#fff;
+    font-size:85%;
+}
+/* ---------->>> TOP OF PAGE <<<-----------*/
+#Toolbar{
+    width:946px;
+    background:#eceae5;
+    margin:0 auto;
+    height:3em;
+}
+#help    {
+    float:left;
+    margin:0.6em 0  0 2.2em;
+}
+#searchbar    {
+    float:right;
+    margin:0 1.4em 0 0;
+    width:700px;
+    text-align:right;
+}
+/* ------ update 11/11/2008 --- */
+#topBanner    {
+background-color:#fff;
+}
+#topBanner img    {
+margin: 0px 7px 0px 7px;
+}
+
+/* ---------->>> HOMEPAGE <<<-----------*/
+/* ---------->>> update 02/10/08 <<<-----------*/
+
+#index-block {float:left; width:200px; margin:40px 0 0 14px; display:inline;}
+#browse-block {float:left; width:400px; margin:40px 0 0 26px;}
+#resources-block {float:left; width:280px; margin:40px 0 10px 26px;}
+.home-block {margin-bottom:2em;}
+
+/* ---------->>> 'A' LEVEL PAGE  update 02/10/08 <<<-----------*/
+#alevel-index-block {float:left; width:200px; margin:28px 0 0 14px; border:none; display:inline;}
+#study-block {float:left; width:414px; margin:28px 0 0 20px;}
+#alevel-resources-block {float:left; width:280px; margin:28px 12px 10px 20px;}
+
+/* ---------->>> INTERNAL <<<-----------*/
+/* ---------->>> update 02/10/08 <<<-----------*/
+#navbar {
+float:left;
+width:160px;
+margin:14px 0 0 14px;
+padding:0;
+display:inline;
+}
+
+#main {
+float:left;
+width:742px;
+margin:14px 0 0 20px;
+padding:0;
+}
+
+#main-frame {
+width:934px;
+margin:14px 0 0 26px;
+padding:0;
+}
+
+
+/* ---------->>> INDEX PAGES <<<-----------*/
+/*CONTAINER FOR TWO COLUMNS*/
+.block    {
+    clear:both;
+    padding:0.5em 0em;
+    border-bottom:1px dashed #CCC;
+    margin-bottom:0.8em;
+}
+/*REMOVES DASHED BORDER WHEN BLOCKS ARE IN SAME THEME*/
+.top    {
+border-bottom:none;
+}
+/* updated 02/10/08-----------
+.block-index-left, .block-index-links    {
+    width:360px;
+    margin:0 1.4em 1em 0;
+    float:left;
+} -----------*/
+.block-index-left, .block-index-links {
+width:353px;
+margin:0 14px 10px 0;
+float:left;
+}
+
+#block.index-links    {
+    float:left;
+    width:273px;
+}
+
+.index-links    {
+    float:left;
+    width:280px;
+
+    margin:0em;
+}
+.index-links-hm    {
+    float:left;
+    width:165px;
+    margin:0 0 0.5em 0;
+}
+.study-links    {
+    float:left;
+    width:210px;
+    margin:0em;
+}
+.block-main    {
+    float:left;
+    width:454px;
+    margin:0em;
+    padding:0;
+    display:inline;
+}
+
+.block-right {
+float:left;
+width:262px;
+margin:0 0 0 26px;
+padding:0;
+}
+
+#tools    {
+    clear:both;
+    margin:1.5em 0;
+    padding:0.75em 0em;
+    }
+    
+/* ---------->>> CLEAR ALL FIX <<<-----------*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */
+.clear    {
+    clear:both;
+    }
+    
+/* ---------->>> HIDE <<<-----------*/
+.hidden {
+    visibility: hidden;
+}
+
+/* ---------->>> HOME BLOCKS <<<-----------*/
+#search-form    {
+    background-color:#ebeaea;
+    padding:1.3em;
+    margin-bottom:2em;
+    height:1%;
+}
+.home-block    {
+    padding:1.3em;
+    border:7px solid #ebeaea;
+}
+#teaching-block .home-block    {clear:both;border:none;padding:0em 2em;}
+.resource-index    {clear:both;padding-bottom:1.5em;}
+/* ---------->>> HEADERS <<<-----------*/
+h1    {font-size:2.1em;line-height:1.6em;font-weight:normal;color:#333;margin:0 0 0.5em 0}
+h2    {clear:both;font-size:1.6em;line-height:1.1em;font-weight:bold;color:#333;margin:0 0 0.75em 0;padding-top:0.5em;}
+h3    {clear:both;font-size:1.45em;line-height:1.2em;font-weight:bold;color:#333;margin:0.5em 0 1em 0;padding-top:0.5em;}
+h4    {font-size:1.3em;line-height:1.1em;font-weight:bold;color:#000;margin:0 0 0.75em 0;padding-top:0.5em;}
+h5    {font-size:1.1em;line-height:1.0em;font-style:italic;color:#000;margin:0 0 0.75em 0;padding-top:0.5em;}
+h6    {font-size:1.1em;line-height:1.0em;font-weight:normal;font-style:italic;color:#000;margin:0 0 0.75em 0;padding-top:0.5em;}
+#browse-block h3    {margin:1.2em 0 0.5em 0; font-size:1.3em;}
+.block-index-left h3, .block-index-links h3    {margin-top:0;}
+.study-links h3    {
+    margin-top:0em;
+}
+h1.home {display:none;}
+h2.overview    {border-top:7px solid #ebebea;padding-top:0.5em;}
+.block h2    {
+    font-weight:normal; color:#333;
+}
+.block h3    {
+    font-size:1.2em; color:#333;
+}
+h3.accordian-head    {
+    margin-bottom:0;
+    margin-top:1em;
+}
+h2.subtheme    {
+    font-size:1.6em;line-height:1.1em;font-weight:normal;color:#333;
+}
+h3.subtheme    {
+    font-size: 1.3em; font-weight:bold; color:#333;
+}
+
+.primary-source {
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    padding:1em 0em;
+    min-height:150px;
+}
+.source h3    {
+    border-top: 1px dotted #ccc;
+    border-bottom: 1px dotted #ccc;
+    padding:0.2em 0;
+    margin:1.3em 0 0 0;
+}
+
+/* ---------->>> HOME LINKS <<<----------- new.css 26-08-2008---------------*/
+#search-block h2 a:link, #search-block h2 a:visited    
+{display:block;margin:0;background:url(/cabinetpapers/images/cabinetpapers/global/search-label-over.gif) no-repeat; }
+#whatsnew-block h2 a:link, #whatsnew-block h2 a:visited    
+{display:block;margin:0;background:url(/cabinetpapers/images/cabinetpapers/global/whatsnew-label-over.gif) no-repeat;}
+#browse-block h2 a:link, #browse-block h2 a:visited    
+{display:block;margin:0;background:url(/cabinetpapers/images/cabinetpapers/global/browse-plain-label-up.gif) no-repeat;}
+#study-block h2 a:link, #study-block h2 a:visited    
+{display:block;margin:0;background:url(/cabinetpapers/images/cabinetpapers/global/study-packages-label-over.gif) no-repeat;}
+#teaching-block h2 a:link, #teaching-block h2 a:visited    
+{display:block;margin:0;background:url(/cabinetpapers/images/cabinetpapers/global/teaching-guides-label-over.gif) no-repeat;}
+h2.alevel-hd a:link, h2.alevel-hd a:visited    
+
+{display:block;margin:0;background:url(/cabinetpapers/images/cabinetpapers/global/alevel-label-up.gif) no-repeat;}
+h2.caboff-hd a:link, h2.caboff-hd a:visited    
+{display:block;margin:0;background:url(/cabinetpapers/images/cabinetpapers/global/cabinet-off-label-up.gif) no-repeat;}
+h2.invest-hd a:link, h2.invest-hd a:visited    
+{display:block;margin:0;background:url(/cabinetpapers/images/cabinetpapers/global/invest-label-over.gif) no-repeat;}
+h2.maps-hd a:link, h2.maps-hd a:visited    
+{display:block;margin:0;background:url(/cabinetpapers/images/cabinetpapers/global/maps-label-up.gif) no-repeat;}
+h2.browse-plain-hd a:link, h2.browse-plain-hd a:visited    
+{display:block;margin:0;background:url(/cabinetpapers/images/cabinetpapers/global/browse-plain-label-over.gif) no-repeat;}
+#search-block h2 a:link:hover, #search-block h2 a:visited:hover, #whatsnew-block h2 a:link:hover, #whatsnew-block h2 a:visited:hover, #browse-block h2 a:link:hover, #browse-block h2 a:visited:hover, #study-block h2 a:link:hover, #study-block h2 a:visited:hover, #teaching-block h2 a:link:hover, #teaching-block h2 a:visited:hover, h2.alevel-hd a:link:hover, h2.alevel-hd a:visited:hover, h2.caboff-hd a:link:hover, h2.caboff-hd a:visited:hover, h2.invest-hd a:link:hover, h2.invest-hd a:visited:hover, h2.maps-hd a:link:hover, h2.maps-hd a:visited:hover, h2.browse-plain-hd a:link:hover, h2.browse-plain-hd a:visited:hover    {visibility:visible; }
+/*Hide text in links off page*/
+#search-block h2 span, #whatsnew-block h2 span, #browse-block h2 span, #study-block h2 span, #teaching-block h2 span, h2.alevel-hd span, h2.caboff-hd span, h2.invest-hd span, h2.maps-hd span, h2.browse-plain-hd span    {position: absolute;left: -50px;top: -50px;}
+/*hide image when hovering*/
+#search-block h2 a:hover img, #whatsnew-block h2 a:hover img, #browse-block h2 a:hover img, #study-block h2 a:hover img, #teaching-block h2 a:hover img, h2.alevel-hd a:hover img, h2.caboff-hd a:hover img, h2.invest-hd a:hover img, h2.maps-hd a:hover img, h2.browse-plain-hd a:hover img    {visibility:hidden}
+
+.space {padding-top:10px;} /*moving h2.images down*/
+
+
+
+/*breadcrumbtrail*/
+/*#breadcrumb    {margin-bottom:2em;font-size:1.2em;width:45.4em}*/
+/*#breadcrumbwide    {margin:1.2em 1.4em 0em 3em;font-size:1.2em;width:74em}*/
+#breadcrumb1    {margin-bottom:2em;font-size:1.1em;min-width:45.5em}
+#breadcrumb2    {float:left;margin:1.2em 0 0 1.8em;padding:0;font-size:1.1em;width:74em;} /* for A level studies */
+#breadcrumbwide1    {margin:1.2em 1.4em 0em 3em;font-size:1.1em;width:74em}
+
+/* ---------->>> TEXT <<<-----------*/
+p, blockquote    {
+    font-size:1.2em;
+    line-height:1.4em;
+    margin:0.8em 0;
+}
+.source p    {
+    margin:0.4em 0;
+}
+small    {font-size:99%}
+input    {font: 1.0em Verdana;}
+#searchbar, #help    {
+    font-size:1.1em;
+}
+
+/* ---------->>> LINKS incl LISTS <<<-----------*/
+a:link { color: #00529b; }
+a:visited { color: #666;color: #00529b; }
+a:focus, a:hover  { color: #e42418; text-decoration:none; }
+a:active { color: #e42418; }
+a img    {border:none;}
+
+#container ul    {
+    margin: 0 0.4em 0 0.2em;
+    padding:0 1.2em;
+    list-style:square;
+    font-size:1.2em;
+    line-height:1.4em;
+}
+#container ul ul li    {
+    font-size:0.9em;
+}
+#container ul ul ul li    {
+    font-size:0.8em;
+}
+#container ol    {
+    margin: 0 0.4em 0 0.5em;
+    padding:0 1.2em;
+    font-size:1.2em;
+    line-height:1.4em;
+}
+#container li    {
+    padding:0.3em 0em;
+}
+
+/* main navigation bar */ 
+#navbar ul{list-style: none; margin:0; padding:0;}
+#navbar ul li {margin: 0;border-bottom: 1px solid #fff;padding:0}
+#navbar li a {padding: 0.5em 0.5em 0.5em 0.75em;background-color:#5e5653;text-decoration: none;font-weight:bold;display:block;color: #fff}
+#navbar li a:link:hover, #navbar li a:visited:hover {background-color:#e42418;color:#FFFFFF;}
+/*second level*/
+#navbar ul ul li {margin: 0;border-bottom:none;background-color:#eceae5;}
+#navbar ul ul li a:link, #navbar ul ul li a:visited {padding: 0.5em 0.5em 0.5em 0.75em;text-decoration:none;font-weight:normal;font-size:0.8em;display: block;color:#000;}
+#navbar ul ul li a:link:hover, #navbar ul ul li a:visited:hover, #navbar ul ul li a.active:link, #navbar ul ul li a.active:visited{background-color:#fff;color:#000;}
+/*selected styles*/
+ul li#selected a:link, ul li#selected a:visited {padding-bottom:1.5em;background:#e42418 url(/cabinetpapers/images/cabinetpapers/global/nav-arrow.gif) no-repeat scroll left bottom;color: #fff}
+ul li#selected a:link:hover, ul li#selected a:visited:hover {background-color:#e42418;color: #fff;}
+ul li#selected ul li a:link, ul li#selected ul li a:visited {background:none;background-color:#eceae5;color:#333;padding-bottom:0.5em;border: medium solid #eceae5}
+
+/*selected styles without siblings*/
+ul li#selected1 a:link, ul li#selected1 a:visited {padding-bottom:0.5em;background:#e42418 no-repeat scroll left bottom;color: #fff}
+ul li#selected1 a:link:hover, ul li#selected1 a:visited:hover {background-color:#e42418;color: #fff;}
+ul li#selected1 ul li a:link, ul li#selected1 ul li a:visited {background:none;background-color:#eceae5;color:#333;padding-bottom:0.5em;}
+
+/*side navigation for Cabinet Who's who Intro - Rumi*/
+.side-nav1    {border-top:7px solid #ebeaea;}
+.side-nav1 ul    {border-bottom:none;padding-bottom:1em;margin-bottom:0.75em;}
+.side-nav1 li {
+    /*list-style-image:url(/cabinetpapers/images/cabinetpapers/global/red-dot-bullet.gif);*/
+    list-style:none;
+    padding:0.1em 0em;    
+}
+
+/*side navigation*/
+.side-nav    {border-top:7px solid #ebeaea;}
+.side-nav ul    {border-bottom:1px solid #CCC;padding-bottom:1em;margin-bottom:0.75em;}
+
+.index-nav ul    {margin-bottom:1em;}
+.side-nav li, .index-nav li, .block-index-left li, .block-index-links li    {
+    list-style-image:url(/cabinetpapers/images/cabinetpapers/global/red-dot-bullet.gif);
+    padding:0.3em 0em;    }
+.side-nav ul ul    {
+    margin-top:0.5em;
+    border-bottom:none;
+    margin-bottom:0;
+}
+
+.side-nav ul ul li    {
+    list-style-image:none;
+    list-style:none;
+    font-size:0.8em;
+    margin-left: -20px;
+}
+
+.index-links-hm ul,  ul.browse-nav, .study-links ul    {
+    padding:0em;
+}
+.index-links-hm ul    {
+    margin-top:-0.5em;
+    margin-left:0em; /*updated 02/10/08*/
+}
+.index-links-hm li, .home-block li    {
+    list-style:none;
+    padding:0.3em 0em;
+}
+
+#pagination    {
+    padding-bottom:1em;
+    margin-bottom:2em;
+    font-size:1.1em;
+    border-bottom:1px dashed #ccc;
+}
+#pagination-foot    {
+    padding-top:1em;
+    margin-top:2em;
+    font-size:1.1em;
+    border-top:1px dashed #ccc;
+}
+.highlight    {
+    
+    background-color:#fff;
+    border: 1px solid #e42418;
+    /*border-bottom:7px solid #e42418;*/
+}
+.highlight p    {
+    padding:0em 1.4em;
+}
+.highlight h3    {
+    background-color:#e42418;
+    margin-top:0;
+    padding:0.9em 1.4em;
+}
+/*buttons*/
+.print    {
+    padding:0.5em 2em;
+    background: #FFF url(/cabinetpapers/images/cabinetpapers/global/print.gif) no-repeat scroll left center;
+} 
+.print:hover    {
+    padding:0.5em 2em;
+    background: #FFF url(/cabinetpapers/images/cabinetpapers/global/print_hov.gif) no-repeat scroll left center;
+} 
+.help    {
+    padding:0.5em 2em;
+    background: #eceae5 url(/cabinetpapers/images/cabinetpapers/global/help.gif) no-repeat scroll left center;
+}
+.help:hover    {
+    padding:0.5em 2em;
+    background: #eceae5 url(/cabinetpapers/images/cabinetpapers/global/help_hov.gif) no-repeat scroll left center;
+}
+.author    {
+    padding:0.5em 2em;
+    background: #FFF url(/cabinetpapers/images/cabinetpapers/global/author.gif) no-repeat scroll left center;
+}
+.author:hover    {
+    padding:0.5em 2em;
+    background: #FFF url(/cabinetpapers/images/cabinetpapers/global/author_hov.gif) no-repeat scroll left center;
+}
+.tip    {
+    width:80px;
+    margin-top:0.5em;
+    padding:0.5em 2em;
+    background: #fff url(/cabinetpapers/images/cabinetpapers/global/help.gif) no-repeat scroll left center;
+}
+.tip:hover    {
+    width:80px;
+    margin-top:0.5em;
+    padding:0.5em 2em;
+    background: #fff url(/cabinetpapers/images/cabinetpapers/global/help_hov.gif) no-repeat scroll left center;
+}
+
+/*tools menu*/
+#tools ul    {
+margin-left:-1.4em;
+}
+.tools-links li {
+    display:inline;
+    padding: 0;
+    float: left;
+    position: relative;
+    margin:0;
+}
+.tools-links li em {
+    font-weight: normal;
+    background: url(/cabinetpapers/images/cabinetpapers/global/hover.png) no-repeat;
+    width: 135px;
+    height: 50px;
+    position: absolute;
+    top: -35px;
+    left: 0px;
+    padding: 0.5em;
+    font-style: normal;
+    z-index: 2;
+    display: none;
+    color:#333;
+    font-size:0.99em;
+    line-height:1.2em;
+}
+ 
+/* ---------->>> CABINET PAPERS DOWNLOADS <<<-----------*/
+
+.accordion h4  {
+    background: url(/cabinetpapers/images/cabinetpapers/global/red-arrow.gif) no-repeat scroll left -48px;
+    padding: 0.7em 1.8em;
+    margin: 0;
+    font-size:1.2em;
+    font-weight:normal;
+}
+.accordion h4.active {
+    background-position: left 7px;
+    margin:0;
+}
+.accordion ul {
+    margin-left: 3em;
+    margin-top:0;
+    border-bottom:none;
+    /* ----list-style-image:url(/cabinetpapers/images/cabinetpapers/global/pdf.gif)----RUMI----*/;
+}
+.accordion li {
+    padding:0.5em 0;
+    margin:0;
+}
+
+ul li.paper    {
+    list-style-image:url(/cabinetpapers/images/cabinetpapers/global/pdf-icon.gif);
+}
+ul li.photo    {
+    list-style-image:url(/cabinetpapers/images/cabinetpapers/global/photo-icon.gif);
+}
+ul li.pic    {
+    list-style-image:url(/cabinetpapers/images/cabinetpapers/global/pic-icon.gif);
+}
+ul li.video    {
+    list-style-image:url(/cabinetpapers/images/cabinetpapers/global/video.gif);
+}
+
+/* ---------->>> FORMS <<<-----------*/
+form    {
+    margin:0;
+    padding:0;
+}
+.formfield    {
+    border:1px solid #666;
+    padding:0.1em;
+    font-size:0.95em;
+    width:160px;
+}
+.formfield-sml    {
+    border:1px solid #666;
+    padding:0.1em;
+    font-size:0.9em;
+    width:70px;
+}
+#searchbar .button, #search-form .button    {
+    background: url(/cabinetpapers/images/cabinetpapers/global/search-bg.gif) no-repeat scroll left center;
+    border:none;
+    color:#fff;
+    text-align:center;
+    padding:0.6em;
+    margin:0 0.5em 0 0.3em;
+    font-size:1.1em;
+}
+#search-form .button    {
+    float:right;
+    margin:0 0.5em 0.5em 0.3em;
+}
+#searchbar .button:hover, #search-form .button:hover    {
+    background: url(/cabinetpapers/images/cabinetpapers/global/search-bg-hov.gif) no-repeat scroll left center;
+    border:none;
+    color:#fff;
+    text-align:center;
+    padding:0.6em;
+    font-size:1.1em;
+}
+.search-links    {
+clear:both;
+font-size:1.0em;
+}
+
+.fieldset    {
+    font-size:1.2em;
+    font-weight:bold;
+    margin:0;
+    padding:0;
+    border:none;
+}
+/* ---------->>> IMAGES <<<-----------*/
+.img-left    {
+    float:left;
+    /* ---------->>>  margin-right:1.5em;  updated 17/10/08 <<<-----------*/
+    margin-right:10px;
+}
+.img-right    {
+    float:right;
+    /* ---------->>>  margin-left:1.5em;  updated 17/10/08 <<<-----------*/
+    margin-left:10px;
+}
+#alevel-banner img    {
+    border:none;
+}
+.large-image    {
+    width:454px;
+    padding:0 0 0.7em 0;
+    border-bottom:1px solid #ebebea;
+    margin-bottom:1.5em;  
+    
+}
+.large-portrait-image    {
+    float:left;
+    display:block;
+    width:230px;
+    padding:0.7em 0 0.7em 0; 
+}
+.portrait-caption {
+   float:left; 
+   padding:0.7em 0.3em 0.7em 0; 
+   width:200px;
+   margin-left:10px;
+}
+.portrait-border {
+    width:454px;
+    border-bottom:1px solid #ebebea;
+    margin-bottom:1.5em; 
+}
+.image-portrait    {
+    width:30px;
+}
+.image-portrait img    {
+    padding-bottom:0.3em;
+}    
+.image-landscape    {
+    width:185px;
+}
+.image-landscape img    {
+    margin-bottom:0.3em;
+}
+.large-image img    {
+    margin-bottom:0.4em;}
+
+                     /* ---------->>> RUMI images inside the text <<<-----------*/
+.image-inside-right {
+width:247px;
+float:right;
+margin-left:1em;
+padding:0 0 0.7em 0;
+border-bottom:1px solid #ebebea;
+}
+                     /* ---------->>> RUMI images inside the text <<<-----------*/
+.image-inside-left {
+width:247px;
+float:left;
+margin-right:1em;
+padding:0 0 0.7em 0;
+border-bottom:1px solid #ebebea;
+}
+                     /* ---------->>> RUMI images for home flash banner <<<-----------*/
+.image-home-video {
+width:946px;
+height:226px;
+margin:0 auto;
+/*border:1px solid red;*/
+background-color:#fff;
+color:#000000;
+background-image: url(/cabinetpapers/images/cabinetpapers/global/flashbg.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+text-align: center;
+}
+
+/* ---------->>> RULES <<<-----------*/
+hr {border:0px;color: #666;background-color: #666;height: 1px;margin:20px 0px;}
+
+/* ---------->>> TABLES <<<-----------*/
+table    {border:0px;color: #666;margin-bottom:1.5em;}
+caption    {font-size:1.2em;margin:1.5em 0em 0.5em 0em;text-align:left;color:#000;font-weight:bold }
+td, th    {padding:0.4em 0.2em 0.6em 0.2em; text-align:left; border-bottom:1px dashed #CCC;vertical-align:top;}
+td ul li    {font-size:0.9em;margin-left:0em;}
+th    {color:#000;font-size:1.1em;border-top:7px solid #ebebea;}    
+
+
+/* ---------->>> RUMI - RedDot Edit Mode <<<-----------*/
+.reddot {color:red}
+.reddot-green {color:green}
+ 
+
+/* ---------->>> SITEMAP <<<-----------*/
+.accordion-sitemap p  {
+    background: url(/cabinetpapers/images/cabinetpapers/global/red-arrow.gif) no-repeat scroll left -48px;
+    padding: 0.7em 1.8em;
+    margin: 0;
+    font-size:1em;
+    font-weight:normal;
+}
+.accordion-sitemap p.active {
+    background-position: left 7px;
+    margin:0;
+}
+.accordion-sitemap ul {
+    margin-left: 2em;
+    margin-top:0;
+    border-bottom:none;
+}
+.accordion-sitemap li {
+    padding:0.2em 0;
+    margin:0;
+}
+
+/* ------------- updted 01-10-2008 ----------*/
+/* ---------->>> WRITING FRAME <<<-----------*/
+
+.side-nav li.writing-frame-link {
+background: #fff url(/cabinetpapers/images/cabinetpapers/global/book_30pcent_tint.jpg) no-repeat scroll right bottom;
+list-style:none;
+border:1px dashed #ccc;
+padding:8px 6px;
+margin-left:-5px;
+margin-top:0.5em;
+margin-bottom:0.5em;
+}
+
+.no-nav li.writing-frame-link {
+background: #fff url(/cabinetpapers/images/cabinetpapers/global/book_30pcent_tint.jpg) no-repeat scroll right bottom;
+list-style:none;
+border:1px dashed #ccc;
+padding:8px 6px 14px 6px;
+margin-left:-5px;
+margin-top:0.5em;
+margin-bottom:0.5em;
+}
+
+.side-nav li.writing-frame-link ul li, .no-nav li.writing-frame-link ul li {
+font-size:0.85em;
+padding:0px;
+list-style:none;
+}
+
+.no-nav li.writing-frame-link ul li {
+margin:8px 0px 10px -20px;
+}
+ 
+/*  RUMI - JISC logo */
+.jisc
+{
+float:left;
+width:60px;
+padding:5px;
+font-size:90%; 
+margin-right:10px;
+}
+ 
+/*  VIDEO SMALL on the top of the page */
+.player
+{
+width:185px;
+height:130px;
+padding:5px;
+border:1px dashed #ccc;
+font-size:90%; 
+text-align: center;
+background-color:#CCC;
+
+}
+/*  VIDEO SMALL on inside the page */
+.player1 
+{
+width:185px;
+height:130px;
+
+padding:5px;
+border:1px dashed #ccc;
+font-size:90%; 
+text-align: center;
+background-color:#CCC;
+}
+/*  VIDEO for the home page */
+.player-home
+{
+width:946px;
+height:226px;
+background-color:#CCC;
+}
+
+.captiontext {float:right; padding:5px; width:45%;}
+ 
+/*  FURTHER READING */
+.courier {
+font-family:courier new;
+font-weight:bold;
+font-size:1.2em;
+}
+ 
+.textright {
+  text-align: right;
+  font-size:100%; 
+}

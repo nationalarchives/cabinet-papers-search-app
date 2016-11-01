@@ -1,0 +1,403 @@
+p {
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+
+div.breather > form > p {
+    color: #555;
+    font-weight: 600;
+}
+
+section {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+input#tab1, input#tab2 {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    top: 0;
+    left: 0
+}
+
+label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+
+label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+label:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+input#tab1:checked + label#tabLabel1, input#tab2:checked + label#tabLabel2 {
+    color: #555;
+    border: 1px solid #ddd;
+    border-top: 2px solid red;
+    border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2 {
+    display: block;
+}
+
+
+input[type=submit] {
+    width: 30%;
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: red;
+}
+
+h4 {
+    margin-bottom: 2em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+div.breather {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 25px;
+    overflow: auto;
+}
+
+form input {
+    display: block;
+    margin-bottom: 2em;
+}
+
+form label {
+    text-align: left;
+    clear: both;
+    float:left;
+    margin-right:15px;
+    padding: 0;
+    cursor: none;
+    color: #666;
+    margin-bottom: 2em;
+    width: 200px;
+}
+
+form label:hover {
+    border: 1px solid transparent;
+    color: #666;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0;
+    margin-right: 15px;
+    margin-bottom: 2em;
+    width: 200px;
+}
+
+form .main , form .main:hover {
+    text-align: left;
+    clear: both;
+    float: left;
+    margin: 0;
+    padding-right: 2em;
+    cursor: default;
+    color: #555;
+    width: 150px;
+    line-height: 20px;
+}
+
+input[type=checkbox] {
+    margin: 2px 0 0;
+    margin-top: 1px\9;
+    line-height: normal;
+}
+
+
+.clear {
+    clear: both;
+    height: 5px;
+}
+
+input[type="text"] {
+    background-color: #fff;
+    border-color: #e0e0e0;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+    border-width: 1px;
+    border-style: solid;
+    color: #474e57;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    width: 69%;
+}
+
+input.date {
+    width: 25%;
+}
+
+label.firstLabel, label.firstLabel:hover {
+    margin-bottom: 0;
+}
+
+span.moreOption {
+    float: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+    text-decoration: underline;
+    color: midnightblue;
+}
+
+span.moreOption a {
+    color: midnightblue;
+}
+
+div.subFields {
+    margin-top: 1em;
+}
+
+
+label.checkbox-inline, label.checkbox-inline:hover {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+    clear: none;
+    margin: .6em;
+}
+
+label.checkbox-inline input[type=checkbox] {
+    position: absolute;
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+#exactwords, #anywords, #exactphrase {
+    float: right;
+    margin-bottom: 0;
+}
+
+input.anywords {
+    float: right;
+    margin-bottom: 0;
+    display: inline-block;
+    width: 135px;
+    margin-left: .5em;
+}
+
+.form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+.form-group label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+
+#browse-block {
+    width: 700px;
+}
+
+input[id^=tab]:focus + label {
+    outline: solid 1px red;
+}
+
+p.andOr {
+    margin-bottom: 1em;
+    font-size: 12px;
+    color: #555;
+}
+
+i {
+    color: darkred;
+}
+
+input[type=checkbox] { display:none; }
+input[type=checkbox] + label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    font-size: 14px;
+    padding-left: 16px;
+}
+
+div.filter label {
+    float: none;
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 1.5em;
+    margin-right: 5px;
+    width: auto;
+}
+
+div.filter a {
+    text-decoration: none;
+}
+
+.dateSection input {
+    width: 204px;
+    display: inline-block;
+}
+label.date, label.date:hover {
+    margin-right: 1em;
+}
+span.inline {
+    margin-right: .2em;
+    margin-left: .2em;
+}
+
+.inline {
+    display: inline-block;
+}
+
+div.help-box {
+    float: right;
+    background-color: #f2f2f2;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+div.help-box p {
+    margin: 0;
+}
+
+div.radio-container {
+    display: inline-block;
+    float: right;
+}
+
+div.radio-container input {
+    display: inline-block;
+}
+
+div.radio-container label {
+    margin-right: 2.5em;
+}
+
+input[type=checkbox] + label:before { content: "\f096"; }
+input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked icon */
+
+/*tool tips*/
+[data-tooltip] {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+[data-tooltip]:before,
+[data-tooltip]:after {
+    visibility: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Position tooltip above the element */
+[data-tooltip]:before {
+    position: absolute;
+    bottom: 150%;
+    left: -14em;
+    margin-bottom: 4px;
+    margin-left: -70px;
+    padding: 7px;
+    width: 320px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #000;
+    background-color: hsla(0, 0%, 20%, 0.9);
+    color: #fff;
+    content: attr(data-tooltip);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Triangle hack to make tooltip look like a speech bubble */
+[data-tooltip]:after {
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -5px;
+    width: 0;
+    border-top: 5px solid #000;
+    border-top: 5px solid hsla(0, 0%, 20%, 0.9);
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+}
+
+/* Show tooltip content on hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:focus:before,
+[data-tooltip]:hover:after,
+[data-tooltip]:focus:after {
+    visibility: visible;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}

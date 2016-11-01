@@ -1,0 +1,61 @@
+/* -----------------version 28-08-2008 -------------------------- */
+/* Updated by Roumiana Kurktchian, rumi@arcsoft.ltd.uk, November 2008 */
+
+/*position of help button*/
+#help    {margin:0.6em 0  0 1.2em;}
+/*adding line-height to reveal button graphic*/
+.help    {line-height:1.7em;}
+/*position and padding of search button*/
+#search-form .button, #search-form:hover .button    {
+    margin:0 0.5em 0.5em 0em;
+    padding:0.2em ;
+}
+#searchbar .button, #searchbar:hover .button    {
+    padding:0.3em;
+    margin:0.3em 0.5em 0 0.3em;
+    font-size:1.0em;
+}
+#searchbar:hover .button    {
+    background: url(/cabinetpapers/images/cabinetpapers/global/search-bg-hov.gif) no-repeat scroll left center;
+}
+/*adding line-height to reveal button graphic*/
+.print, .author    {
+    line-height:1.9em;
+    font-size:0.9em;
+}
+/*LEFT MENU padding*/
+#navbar ul ul li a:link, #navbar ul ul li a:visited {height:1px;}
+#navbar ul ul li a:link:hover, #navbar ul ul li a:visited:hover, #navbar ul ul li a.active:link, #navbar ul ul li a.active:visited{height:1px;}
+
+/*text size in inputs*/
+.formfield    {
+    font-size:1em;
+}
+#search-form .formfield    {
+    font-size:0.9em;
+}
+.side-nav li, .index-nav li, .block-index-left li, .block-index-links li    {
+    list-style-image:url(/cabinetpapers/images/cabinetpapers/global/red-dot-bullet.gif);
+    padding:0.3em 0em;    }
+ol    {
+    margin: 0 0.4em 0 0.9em;
+    padding:0 1.2em;
+    font-size:1.2em;    
+}
+caption    {padding:1em 0em;}
+ 
+/* ----------------- amended 01-10-2008 -------------------------- */
+.side-nav li.writing-frame-link {
+background: #fff url(/cabinetpapers/images/cabinetpapers/global/book_30pcent_tint.jpg) no-repeat scroll right bottom;
+list-style:none;
+list-style-image:none;
+border:1px dashed #ccc;
+padding:8px 6px;
+margin-left:-8px;
+margin-top:0.5em;
+}
+
+/* ----------------- amended 15-02-2009 -------------------------- */
+
+
+#alevel-resources-block{	MARGIN: 28px 0 10px 20px;}
