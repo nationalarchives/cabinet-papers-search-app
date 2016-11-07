@@ -10,7 +10,7 @@ div.breather > form > p {
 
 section {
     display: none;
-    padding: 20px 0 0;
+    /*padding: 20px 0 0;*/
     border-top: 1px solid #ddd;
 }
 
@@ -52,7 +52,8 @@ input#tab1:checked + label#tabLabel1, input#tab2:checked + label#tabLabel2 {
     color: #555;
     border: 1px solid #ddd;
     border-top: 2px solid red;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 #tab1:checked ~ #content1,
@@ -97,10 +98,13 @@ hr {
 }
 
 div.breather {
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     background-color: #f2f2f2;
     padding: 25px;
     overflow: auto;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 form input {
@@ -263,6 +267,7 @@ input.anywords {
 
 #browse-block {
     width: 700px;
+    margin: 20px 0 0 0;
 }
 
 input[id^=tab]:focus + label {
@@ -393,6 +398,14 @@ input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked ico
     content: " ";
     font-size: 0;
     line-height: 0;
+}
+
+#container {
+    margin-top: 1px;
+}
+
+#index-block {
+    margin: 0;
 }
 
 /* Show tooltip content on hover */

@@ -1,0 +1,15 @@
+{
+  "name": "recommended-links",
+  "version": "1.0.0",
+  "description": "## Recommended links application",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nationalarchives/recommended-links.git"
+  },
+  "author": "Punal Chotrani",
+  "license": "ISC"
+}
