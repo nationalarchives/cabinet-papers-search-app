@@ -14,13 +14,6 @@ section {
     border-top: 1px solid #ddd;
 }
 
-#breadcrumb1 {
-    margin-bottom: 2em;
-    font-size: 1.1em;
-    min-width: 45.5em;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-}
-
 input#tab1, input#tab2 {
     position: absolute;
     overflow: hidden;
@@ -417,6 +410,12 @@ input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked ico
 
 #index-block {
     margin: 0;
+}
+
+#breadcrumb1 {
+    margin-bottom: 2em;
+    font-size: 1em;
+    min-width: 45.5em;
 }
 
 /* Show tooltip content on hover */
