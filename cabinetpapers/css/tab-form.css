@@ -14,6 +14,13 @@ section {
     border-top: 1px solid #ddd;
 }
 
+#breadcrumb1 {
+    margin-bottom: 2em;
+    font-size: 1.1em;
+    min-width: 45.5em;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
 input#tab1, input#tab2 {
     position: absolute;
     overflow: hidden;
@@ -306,7 +313,7 @@ div.filter a {
 }
 
 .dateSection input {
-    width: 204px;
+    width: 200px;
     display: inline-block;
 }
 label.date, label.date:hover {
@@ -398,6 +405,10 @@ input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked ico
     content: " ";
     font-size: 0;
     line-height: 0;
+}
+
+#topBanner {
+    height: 65px;
 }
 
 #container {
