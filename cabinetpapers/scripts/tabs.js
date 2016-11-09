@@ -1,11 +1,11 @@
 $(document).ready(function(){
-    $('#all').click(function(){
-        if($(this).prop("checked") == true){
-            $(this).siblings('input[type=checkbox]').prop('checked', false);
+    $(this).click(function () {
+        if ($("input[name='filter[]']").is(':checked')) {
+            $('#all').prop('checked',false);
         }
-        else if ($(this).prop("checked") == true) {
-            // if is NOT checked then check it liek checked="true"
-            $(this).siblings('input[type=checkbox]').prop('checked', true);
+        if ($("input[name='filter[]']:checked").length == $("input[name='filter[]").length) {
+            $('#all').prop('checked',true);
+            $("input[name='filter[]']").prop('checked',false);
         }
     });
 });

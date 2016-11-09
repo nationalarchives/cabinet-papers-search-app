@@ -36,10 +36,7 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/ico"/>
     <!--<script type="text/javascript" src="/cabinetpapers/scripts/jquery.js">-->
     <!--</script>-->
-    <script
-            src="https://code.jquery.com/jquery-2.2.4.min.js"
-            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/cabinetpapers/scripts/cabinet.js">
     </script>
     <script language="javascript" type="text/javascript" src="/cabinetpapers/scripts/utils.js">
@@ -83,9 +80,9 @@
 <div id="OuterWrapper">
     <div id="header">
         <div id="hdr">
-            <script src="/script/jquery-latest.js" type="text/javascript"></script>
-            <script src="/script/global-search.js" type="text/javascript"></script>
-            <script src="/script/hdr-search-utils.js" type="text/javascript"></script>
+            <!--<script src="/script/jquery-latest.js" type="text/javascript"></script>-->
+            <!--<script src="/script/global-search.js" type="text/javascript"></script>-->
+            <!--<script src="/script/hdr-search-utils.js" type="text/javascript"></script>-->
 
             <div id="hdr-logo-holder">
                 <a href="/default.htm" title="The National Archives">
@@ -208,7 +205,13 @@
     <!-- middle column -->
     <div id="browse-block">
         <div id="breadcrumb1">
-            You are here:&nbsp;<span id="ctl00_smp"><a href="#ctl00_smp_SkipLink"><img alt="Skip Navigation Links" height="0" width="0" src="/cabinetpaperssearch/WebResource.axd?d=E-cva0pwpjz42vC8q3cBtTQKxBWQs64qeihh0RGyhUalfrfcF4T96A1DYeGlYT-ba-oYG1kJHJUKPJRAWMTZ9Ke8bhY1&amp;t=635588624026805809" style="border-width:0px;"></a><span><a title="Cabinet Papers Home" href="/cabinetpapers/">Cabinet Papers Home</a></span><span> &gt; </span><span>Cabinet papers search</span><a id="ctl00_smp_SkipLink"></a></span>
+            You are here:&nbsp;<span id="ctl00_smp"><span>
+            <a title="Cabinet Papers Home" href="/cabinetpapers/">Cabinet Papers Home</a>
+        </span>
+            <span> &gt; </span>
+            <span>Cabinet papers search</span>
+            <a id="ctl00_smp_SkipLink"></a>
+        </span>
         </div>
         <!--<div class="help-box">-->
             <!--<p>Need help with your search?</p>-->
@@ -256,16 +259,16 @@
                     <div class="filter">
                         <input id="all" type="checkbox" checked/>
                         <label for="all">All</label>
-                        <input id="memoranda" type="checkbox"/>
+                        <input id="memoranda" type="checkbox" name="filter[]"/>
                         <label for="memoranda">Memoranda</label><a href="#" class="has-tooltip" data-tooltip="Memoranda include policy proposals and positions taken by ministers or government departments."><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
                     </a>
-                        <input id="conclusions" type="checkbox" />
+                        <input id="conclusions" type="checkbox" name="filter[]"/>
                         <label for="conclusions">Conclusions</label><a href="#" class="has-tooltip" data-tooltip="Conclusions include cabinet discussions and agreed action points."><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
                     </a>
-                        <input id="precedentbooks" type="checkbox" />
+                        <input id="precedentbooks" type="checkbox" name="filter[]"/>
                         <label for="precedentbooks">Precedent Books</label><a href="#" class="has-tooltip" data-tooltip="Precedent books include policy on how the Cabinet works."><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
                         </a>
-                        <input id="notebooks" type="checkbox" />
+                        <input id="notebooks" type="checkbox" name="filter[]"/>
                         <label for="notebooks">Notebooks</label>
                         <a href="#" class="has-tooltip" data-tooltip="Notebooks include transcripts of cabinet discussions revealing a minister's stance before consensus."><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
                         </a>
