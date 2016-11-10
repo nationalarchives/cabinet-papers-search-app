@@ -14,5 +14,13 @@ $(document).ready(function(){
         if ($('#all').attr('checked')) {
             $('#all').attr('disabled', false);
         }
+        if ($("input[name='filter[]']:checked").length <= 1) {
+            $("#all").prop("disabled", false);
+            //$('#all').prop('checked',false);
+        }
+        $('#all').change(function(){
+            $('#all').prop('checked',true);
+            $("input[name='filter[]']").prop('checked',false);
+        });
     });
 });
