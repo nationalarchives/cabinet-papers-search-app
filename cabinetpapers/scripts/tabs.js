@@ -1,8 +1,5 @@
 $(document).ready(function(){
     $(this).click(function () {
-        if ($('#all').attr('checked')) {
-            $('#all').attr('disabled', true);
-        }
         if ($("input[name='filter[]']").is(':checked')) {
             $('#all').prop('checked',false);
         }
