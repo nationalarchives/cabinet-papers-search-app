@@ -19,7 +19,7 @@ $(document).ready(function(){
             //$('#all').prop('checked',false);
         }
         $('#all').change(function(){
-            $('#all').prop('checked',true);
+            $(this).prop('checked',true);
             $("input[name='filter[]']").prop('checked',false);
         });
     });
