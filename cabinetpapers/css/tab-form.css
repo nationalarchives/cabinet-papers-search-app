@@ -144,6 +144,7 @@ form .main , form .main:hover {
     cursor: default;
     color: #555;
     width: 150px;
+    height: 4em;
     line-height: 20px;
 }
 
