@@ -61,6 +61,10 @@ input#tab1:checked + label#tabLabel1, input#tab2:checked + label#tabLabel2 {
     display: block;
 }
 
+#content2 #websearch {
+    width: 98%;
+}
+
 
 input[type=submit] {
     width: 30%;
