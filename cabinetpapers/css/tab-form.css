@@ -444,9 +444,10 @@ input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked ico
 }
 
 #footer-wrapper {
+    margin-top: 2em;
     color: #FCFCFC;
     font-size: 1.25em;
-    background: url("images/global/footer-background.png") no-repeat #333;
+    background: url("/cabinetpapers/images/cabinetpapers/global/footer-background.png") no-repeat #333;
     min-height: 700px;
 }
 
