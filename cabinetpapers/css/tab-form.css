@@ -382,7 +382,8 @@ div.radio-container input {
 }
 
 div.radio-container label {
-    margin-right: 2.5em;
+    margin-right: 1em;
+    margin-top: .2em;
 }
 
 /*input[type=checkbox] + label:before { content: "\f096"; }*/
