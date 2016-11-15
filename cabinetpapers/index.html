@@ -77,30 +77,15 @@
                     <img src="/images/global/hdr-logo.gif" alt="The National Archives" title="The National Archives">
                 </a>
             </div>
-            <ul class="hidden">
-                <li><a href="#content" accesskey="s">Skip to Content</a></li>
-                <li><a href="/help/accesskeys.htm" accesskey="0">List of Access Keys</a></li>
-            </ul>
+            <!--<ul class="hidden">-->
+                <!--<li><a href="#content" accesskey="s">Skip to Content</a></li>-->
+                <!--<li><a href="/help/accesskeys.htm" accesskey="0">List of Access Keys</a></li>-->
+            <!--</ul>-->
         </div>
     </div>
 </div>
 <div id="mainnavigation">
     <div id="main-navigation">
-        <div class="accesskeys">
-            <ul>
-                <li><a href="#content" accesskey="s">Skip to content</a></li>
-                <li><a href="/" accesskey="1">Home page</a></li>
-                <li><a href="/help/atoz.htm" accesskey="3">A to Z index</a></li>
-                <li><a href="/search" accesskey="4">Search</a></li>
-                <li><a href="/visit" accesskey="5">Visit us</a></li>
-                <li><a href="/help" accesskey="6">Help</a></li>
-                <li><a href="/contact/complaints.htm" accesskey="7">Complaints procedure</a></li>
-                <li><a href="/legal" accesskey="8">Terms of use</a></li>
-                <li><a href="/contact" accesskey="9">Contact us</a></li>
-                <li><a href="/help/accesskeys.htm" accesskey="0">Access key details</a></li>
-            </ul>
-        </div>
-
         <div id="main-menu-wrapper">
 
             <ul id="main-menu">
@@ -163,7 +148,6 @@
         <h2>Search</h2>
         <input id="tab1" type="radio" name="tabs" value="12" checked>
         <label id="tabLabel1" for="tab1">Cabinet papers</label>
-
         <input id="tab2" type="radio" name="tabs" value="34">
         <label id="tabLabel2" for="tab2">Education resources</label>
         <section id="content1">
@@ -188,10 +172,12 @@
                         <p class="andOr">and / or</p>
                         <div class="clear"></div>
 
-                        <label class="main">At least one of these words</label>
-                        <input type="text" class="anywords" name="anywords">
-                        <input type="text" class="anywords" name="anywords">
-                        <input type="text" class="anywords" name="anywords">
+                        <label for="anyword_box1" class="main">At least one of these words</label>
+                        <input type="text" class="anywords" name="anywords_box1" id="anyword_box1">
+                        <label for="anyword_box2" class="main visuallyHidden">At least one of these words</label>
+                        <input type="text" class="anywords" name="anywords_box2" id="anyword_box2">
+                        <label for="anyword_box3" class="main visuallyHidden">At least one of these words</label>
+                        <input type="text" class="anywords" name="anywords_box3" id="anyword_box3">
                     </div>
                     <div class="clear"></div>
 
