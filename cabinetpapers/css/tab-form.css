@@ -11,6 +11,14 @@ p {
     line-height: 1.5;
 }
 
+#navbar {
+    width: 159px;
+}
+
+#hdr {
+    margin-bottom: 0!important;
+}
+
 div.breather > form > p {
     color: #555;
     font-weight: 600;
@@ -94,6 +102,11 @@ input[type=submit] {
     float: right;
 }
 
+div.filter-container {
+    margin-left: 16em;
+    width: 54%;
+}
+
 input[type=submit]:hover {
     background-color: #d62106;
 }
@@ -128,15 +141,15 @@ div.breather {
 }
 
 form input {
-    display: block;
+    /*display: block;*/
     margin-bottom: 2em;
 }
 
 form label {
-    text-align: left;
+    /*text-align: left;*/
     clear: both;
-    float:left;
-    margin-right:15px;
+    /*float:left;*/
+    /*margin-right:5px;*/
     padding: 0;
     cursor: none;
     color: #666;
@@ -150,7 +163,7 @@ form label:hover {
     font-weight: 600;
     display: inline-block;
     padding: 0;
-    margin-right: 15px;
+    margin-right: 5px;
     margin-bottom: 2em;
     width: 200px;
 }
@@ -225,7 +238,6 @@ div.subFields {
 label.checkbox-inline, label.checkbox-inline:hover {
     position: relative;
     display: inline-block;
-    margin-bottom: 0;
     font-weight: 400;
     vertical-align: middle;
     cursor: pointer;
@@ -245,11 +257,10 @@ label.checkbox-inline input[type=checkbox] {
 }
 
 input.anywords {
-    float: right;
     margin-bottom: 0;
     display: inline-block;
-    width: 135px;
-    margin-left: .5em;
+    width: 129px;
+    margin-left: .7em;
 }
 
 .form-group {
@@ -303,11 +314,11 @@ p.andOr {
 
 i {
     color: darkred;
+    margin-right: 20px;
 }
 
-input[type=checkbox] { display:none; }
+/*input[type=checkbox] { display:none; }*/
 input[type=checkbox] + label:before {
-    font-family: FontAwesome;
     display: inline-block;
     font-size: 14px;
     padding-left: 16px;
@@ -318,12 +329,20 @@ div.filter label {
     font-size: 14px;
     font-weight: 200;
     margin-bottom: 1.5em;
-    margin-right: 5px;
+    margin-right: 2px;
     width: auto;
+}
+
+div.filter label[for=all] {
+    margin-right: 20px;
 }
 
 div.filter a {
     text-decoration: none;
+}
+
+div.filter label::focus {
+    outline: solid 1px #d62106;
 }
 
 .dateSection input {
@@ -366,8 +385,8 @@ div.radio-container label {
     margin-right: 2.5em;
 }
 
-input[type=checkbox] + label:before { content: "\f096"; }
-input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked icon */
+/*input[type=checkbox] + label:before { content: "\f096"; }*/
+/*input[type=checkbox]:checked + label:before { content: "\f046"; } !* checked icon *!*/
 
 /*tool tips*/
 [data-tooltip] {
@@ -592,8 +611,5 @@ input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked ico
 }
 
 /* End Footer css */
-
-
-
 
 
