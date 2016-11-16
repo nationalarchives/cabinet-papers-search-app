@@ -104,7 +104,7 @@ input[type=submit] {
 
 div.filter-container {
     margin-left: 16em;
-    width: 54%;
+    width: 56%;
 }
 
 input[type=submit]:hover {
@@ -315,6 +315,7 @@ p.andOr {
 i {
     color: darkred;
     margin-right: 20px;
+    margin-left: 6px;
 }
 
 /*input[type=checkbox] { display:none; }*/
@@ -382,7 +383,7 @@ div.radio-container input {
 }
 
 div.radio-container label {
-    margin-right: 1em;
+    margin-right: .5em;
     margin-top: .2em;
 }
 
@@ -429,7 +430,7 @@ div.radio-container label {
 [data-tooltip]:after {
     position: absolute;
     bottom: 150%;
-    left: 50%;
+    left: 30%;
     margin-left: -5px;
     width: 0;
     border-top: 5px solid #000;
