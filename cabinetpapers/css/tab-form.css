@@ -614,4 +614,11 @@ div.radio-container label {
 
 /* End Footer css */
 
-
+@media print {
+    .breather > form {
+        display: block;
+    }
+    #browse-block {
+        margin-left: 2em;
+    }
+}
