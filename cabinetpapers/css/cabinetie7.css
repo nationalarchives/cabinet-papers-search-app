@@ -1,0 +1,58 @@
+/* ------------------ version 28-08-2008 ----------------*/
+/* Updated by Roumiana Kurktchian, rumi@arcsoft.ltd.uk, November 2008 */
+
+.block    {
+    padding:0.5em 0;
+    margin-bottom:0.8em;
+}
+/*adding line-height to reveal button graphic*/
+.help    {line-height:1.7em;}
+p, blockquote    {
+    font-size:1.2em;
+    line-height:1.4em;
+    margin:0.5em 0;
+}
+/*position and padding of search button*/
+#search-form .button, #search-form:hover .button    {
+    margin:0 0.5em 0.5em 0em;
+    padding:0.2em ;
+}
+#searchbar .button, #searchbar:hover .button    {
+    padding:0.3em;
+    margin:0.3em 0.5em 0 0.3em;
+    font-size:1.0em;
+}
+/*adding line-height to reveal button graphic*/
+.print, .author    {
+    line-height:1.9em;
+    font-size:0.9em;
+}
+
+/*text size in inputs*/
+.formfield    {
+    font-size:1em;
+}
+#search-form .formfield    {
+    font-size:0.9em;
+}
+.side-nav li, .index-nav li, .block-index-left li, .block-index-links li    {
+    list-style-image:url(/cabinetpapers/images/cabinetpapers/global/red-dot-bullet-ie.gif);
+    padding:0.3em 0em;    }
+    
+ol    {
+    margin: 0 0.4em 0 0.9em;
+    padding:0 1.2em;
+    font-size:1.2em;
+}
+caption    {padding:1em 0em;}
+ 
+/* ----------------- amended 01-10-2008 -------------------------- */
+.side-nav li.writing-frame-link {
+background: #fff url(/cabinetpapers/images/cabinetpapers/global/book_30pcent_tint.jpg) no-repeat scroll right bottom;
+list-style:none;
+list-style-image:none;
+border:1px dashed #ccc;
+padding:8px 6px;
+margin-left:-8px;
+margin-top:0.5em;
+}

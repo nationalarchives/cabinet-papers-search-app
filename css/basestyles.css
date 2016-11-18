@@ -1,0 +1,525 @@
+/*
+================================================================================
+General template, layout styles for standard 2-column content page.
+Author:       Martyn Green
+Created:      April 29th 2006
+Updated: March 2013 (DW) Added new global search header styles
+Updated: February 02 2010 (CDA) Added background-color to body (to fix ie6 frame background repeat bug)
+Updated: September 30 2008 (CDA) Added new styles for RSS feed link
+Updated: March 08th 2007 (MG) Added new styles for appplication forms
+Updated: February 27th (MG) Moved paging styles here from globalstyles
+Updated: ???? (??) ???
+Updated: December 12th (MG) Pre-meeting shuffle
+[keep last 5 updated]
+================================================================================
+*/
+/*GENERAL STYLES*/
+body         {    font-family:Verdana,Arial,Geneva,Helvetica,sans-serif; color:#000000; margin:0 auto 0 auto; padding:0 14px 0 14px !important; font-size:0.75em!important; line-height:150%;background:url(/images/global/body-bg.jpg) top center repeat-y; background-color: #fff; width:960px; }
+img  {border:none;}
+form {margin: 0;}
+a         {color: #0066CC; text-decoration: underline;}
+a:visited {color: #762123; text-decoration: underline;}
+a:hover   {color: #cc0000;}
+/*a:focus, a:active {background-color: #0066CC !important; color:white !important;}*/
+
+/*RSS feed link styles*/
+div#rssLink {text-align: right; margin-top: -30px; padding-bottom: 10px;}
+
+/*UTILITY*/
+.clearing {clear:both; height:0px!important; overflow: hidden;}
+
+.divider  {height: 1px; overflow: hidden; border-bottom: solid 2px #e8e1bb; margin: 1.3em 0;}
+.first {margin-top:0 !important;}
+.hide  {display:none;}
+.big   {font-size: 120%}
+.medium{font-size: 95%}
+.half  {width:46%;}
+.todo  {color: green; font-weight: bold; background: #F3F30E url(/images/global/todo.gif) no-repeat top left; border: solid 1px #ADAD44; padding: 2px 2px 2px 45px; margin-bottom: 1em;}
+.note  {margin:0.5em 0; font-size:0.9em; color: #666;}
+.emphasis  {color: #cb0d07;}
+.emphasis2 {font-weight: bolder; font-size: 120%;}
+.vertdivider {padding-bottom: 30px;}
+.nudge {margin-left: 12px;}
+.erroralert {color: #CB0D07;}
+
+/*ALIGNMENT*/
+.flleft  {float:left;  margin-right:12px;}
+.flright {float:right; margin-left: 12px;}
+.acenter {text-align:center;}
+.aleft   {text-align:left;}
+.aright  {text-align:right;}
+
+
+
+
+/*CONTENT BLOCKS*/
+div#breadcrumb {font:0.9em/150% Verdana,Geneva,Arial,Helvetica,sans-serif normal; color:#000000; background-color:#fff;padding:3px 3px 5px 20px ; margin: 5px 0 0 0; }
+div#breadcrumb a, div#breadcrumb a:visited  {color:black;}
+div#breadcrumb a:hover {text-decoration: none;}
+div#leftcol {font-size: 1em; float: left; width: 25%;}
+
+/*LEFT NAVIGATION STYLES*/
+div#navigation {padding:0 0 20px 12px;}
+div#navigation ul {list-style:none; margin: 0; padding: 0;}
+div#navigation ul li {background: url(/images/arrows/nav_arrowright_off.gif) no-repeat 0 0; padding: 2px 0 0.5em 25px;}
+
+div#navigation ul li.on {background: url(/images/arrows/nav_arrowdown_on.gif) no-repeat 0 0;}
+div#navigation ul li.onsingle {background: url(/images/arrows/nav_arrowright_on.gif) no-repeat 0 0;}
+div#navigation ul li.on a, div#navigation ul li.onsingle a  {font-weight: bold; color: #666633;}
+div#navigation ul li a {text-decoration: none; color: black;}	
+div#navigation ul li a:hover, div#navigation ul li.on ul li a:hover  {color:#CB0D07;}
+div#navigation ul li ul {border-bottom: none; padding: 4px 0;}
+div#navigation ul li ul li {background: none; padding: 0 0 0 10px;}
+div#navigation ul li ul li.noindent {background: none; padding: 0 0 5px 0px;}
+div#navigation ul li.on ul li a {font-weight: normal; color: black;}
+div#navigation ul li.on ul li a.on {background: none; color:#666633; font-weight: bold;}
+
+/*CONTENT STYLES*/
+div#titlecontainer {}
+div#titlethumb {float:right; margin-left: 10px;}
+div#titleimage {float:left; border-right: dotted 1px black; margin-right: 12px;}
+
+div#pagecontent {font-size: 1em; margin: 0 0 2em 2%; padding: 0; width: 70%; float: left;}
+div#pagecontent h1, h1 {font-family: Verdana, Arial, Helvetica,sans-serif; margin-bottom:0.5em; font-size: 1.6em; color: #aaa966; font-weight: normal; margin-top: 0;}
+div#pagecontent h2, h2 {margin-bottom:1em; font-size: 1.3em;}
+div#pagecontent h2.subsection, h2.subsection {color:#CB0D07; border-bottom: dotted 1px black; }
+div#pagecontent h3 {margin-top:2em; margin-bottom:1em; font-size: 1.1em; }
+div#pagecontent h3.alt {color:#CB0D07;}
+div#pagecontent h4 {margin-bottom:1em; font-size: 1em;}
+div#pagecontent p  {padding-left:0; margin-left:0; margin-bottom:0.8em; font-size:1em;}
+div#pagecontent p.lead {margin-top:2.5em; }
+div#pagecontent p.indent {text-indent:1em;}
+div#pagecontent ul {list-style-image:url(/images/global/bullet_red.gif); padding:0 5px 0 20px; margin:0 0 2em 2em;}
+div#pagecontent div.subnav {width: 100%; float: left;}
+div#pagecontent div.subnav ul{margin: 0 22px 0 8px; list-style: none; padding: 0;}
+div#pagecontent div.subnav ul li {margin:0 0 2px 0; background: url(/images/home-img/flr-bullet.gif) no-repeat 0 4px; padding-left: 10px;}
+div#pagecontent ol {margin-bottom:2em;}
+div#pagecontent dl {padding:0; margin:0;}
+div#pagecontent dt {padding-top:0.5em; font-weight:bold;}
+div#pagecontent .latin {font-style: italic;}
+div#pagecontent dt.oneline {padding-top:0em; float:left; clear:left; width: 15em; font-style: italic; font-weight: normal;}
+div#pagecontent dt.twoline {padding:0 0 5px 0; /*width: 50%;*/ font-style: italic; font-weight: normal;}
+div#pagecontent dd {padding-bottom:0.5em;}
+div#pagecontent dd.noindent {padding-bottom:0.5em; margin-left: 0px;}
+div#pagecontent dd.oneline  {padding-top:0em; padding-left: 1em; float:left; width: 20em; vertical-align: bottom; border: 0;}
+div#pagecontent div.topofpage {font-size:0.9em; margin-bottom: 2.5em;}
+div#pagecontent div.topofpage a {background: url(/images/arrows/arrowup.gif) no-repeat 0 3px; padding-left: 14px;}
+div#pagecontent div.simpleinline {margin: 2em 0 ; font-size:1em;}
+div#pagecontent div.simpleinline ul {list-style:none; margin: 0; padding: 0; }
+div#pagecontent div.simpleinline ul li {margin: 0; padding:0 0.5em 0 15px; display: inline; background: url(/images/arrows/arrowright.gif) no-repeat 0 2px;}
+div#pagecontent div.linklist {margin: 2em 0 ; font-size:1em;}
+div#pagecontent div.linklist ul {list-style:none; margin: 0; padding: 0; }
+div#pagecontent div.linklist ul li {margin:0 0 2px 0; padding:0 0.5em 0 15px; display: block; background: url(/images/arrows/arrowright.gif) no-repeat 0 2px; }
+div#pagecontent div.inlinelist ul {list-style:none; margin: 0; padding: 0;}
+div#pagecontent div.inlinelist ul li {margin: 0; padding:0 0.5em 0 15px; display: inline; background:none;}
+div#pagecontent div.rightthumb {float:right; width:170px; margin:0 0 1em 16px;}
+div#pagecontent div.rightthumb img {border: solid 1px #666633;}
+div#pagecontent div.rightthumb a img {border: none;}
+div#pagecontent div.photocaption {border-bottom: solid 1px black; padding: 6px; color: #666633; font-size: 0.9em; text-align: left; margin-bottom:0.5em;}
+div#pagecontent div.photocaptionpanel {padding: 6px; color: #666633; font-size: 0.9em; text-align: center; margin-bottom:0;}
+
+/*Creates a large alphabet letter beside an alphabetical list*/
+div#pagecontent h2.atoz {font-family: Verdana, Arial, Helvetica,sans-serif; margin-top: 10px; margin-bottom: 10px; font-size: 4em; color: #CB0D07; font-weight: normal;}
+
+/*PANEL STYLES*/
+div.panel{padding: 1em; margin: 1em 0; border:solid 1px #E8E1BB; display:inline-block; width: 98%;}
+div.panelhalf{padding: 1em; margin: 1em 0; border:solid 1px #666633; display:inline-block; width: 34%;}
+div.gamepanel  {background-color: #e8e8c7; border:solid 1px #666633; display:inline-block; width: 550px; height: 400px;}
+div.callout {padding:0.5em; margin-bottom: 1em;}
+
+.lightparchment{background-color: #f3f0dd;}
+.plain {background-color: #FFFFFF;}
+.teal  {background-color: #BBDDDD;}
+.rose  {background-color: #EEDDDD;}
+.green {background-color: #CCDDCC;}
+.cream {background-color: #FFEECC;}
+.egg   {background-color: #E8E1BB;}
+
+
+/*TAB STYLES*/
+ul#tabsnav { font-weight:bold; color:#666; margin:0 !important; list-style:none !important; line-height:1.5em; padding: 0 0 0 0 !important; border-bottom: solid 1px #cacaca; height:20px;}
+ul#tabsnav li{list-style-type:none !important; float: left; margin:0 5px 0 0; padding:0 0 0 10px; background:url(/images/tabs/css/tab_off.jpg) transparent top left no-repeat; height:20px; line-height:1.5em;  top: 1px;}
+ul#tabsnav li a{ color:#000; text-decoration:none; background:url(/images/tabs/css/tab_off.jpg) transparent top right no-repeat; display:block; padding:0 10px 0 0; line-height:1.5em;}
+ul#tabsnav li a:hover{color:#CC0000;}
+ul#tabsnav li.tabon{background:url(/images/tabs/css/tab_on.jpg) transparent top left no-repeat;}
+ul#tabsnav li.tabon a{background:url(/images/tabs/css/tab_on.jpg) transparent top right no-repeat;}
+div#tabmain {background-color: white; padding: 10px 25px; border-bottom: solid 1px #cacaca; border-left: solid 1px #cacaca; border-right: solid 1px #cacaca; margin:0 !important;}
+
+/*TABLE STYLES*/
+/* Bordered grid table for simple and complex data, including styles for primary and secondary headings, and vertical and horizontal dividers*/
+div#pagecontent table.datatable {margin: 0 0 1em 0; padding:0; border-collapse: collapse; border-spacing: 0; border: solid 1px #ccc;}
+div#pagecontent table.datatable th {text-align:left; background-color:#e8e1bb; font-weight: bold; padding:2px 4px; border: solid 1px #ccc;}
+div#pagecontent table.datatable th.secondary {text-align:center; background-color: #FDFDFD; font-weight: bold; padding:2px 4px; border: solid 1px #ccc;}
+div#pagecontent table.datatable th.column {text-align:left; background-color: #F3F3F3; color:#000000; font-weight: bold; padding:2px 4px; border-bottom: solid 1px #cacaca;}
+div#pagecontent table.datatable td {border: dotted 1px #ccc; padding:2px 4px;}
+div#pagecontent table.datatable td.hdivider {border-bottom: solid 1px #acabab;}
+div#pagecontent table.datatable td.vdivider {border-right: solid 1px #acabab;}
+
+div#pagecontent table.invoicetable {margin: 0 0 1em 1em; border-collapse: collapse; border-spacing: 0; background-color:#f3f0dd; text-align: left; border-bottom: dotted 1px #ccc;}
+div#pagecontent table.invoicetable td {border-bottom: dotted 1px #ccc;  padding:8px;}
+div#pagecontent table.invoicetable th {text-align:left; background-color:#f3f0dd; font-weight: bold; padding:8px; border-bottom: dotted 1px #ccc;}
+
+/* gridless table for simple two-column layout*/
+div#pagecontent table.nogrid {margin: 1em 0 1em 0; padding:0; border: none;}
+div#pagecontent table.nogrid th {text-align:left; font-weight: bold; padding:2px 4px;}
+div#pagecontent table.nogrid td {border-bottom: solid 0px transparent; padding:2px 4px; }
+
+div.important {border: solid 1px #868048; margin: 1.3em 0; padding: 0; background-color: #F3F0DD;}
+div.important div{ margin:0; padding: 0.4em 0 0.4em 100px; background: url(/images/base/importantlbl.gif) no-repeat;}
+div.tippanel {border: dotted 1px black; padding: 10px; font-size: 0.9em; overflow:hidden; }
+div.tippanel h2 {font-size: 1.2em; margin: 0 0 0.5em 0;}
+div.tippanel h3 {font-size: 1em; margin: 0; color: #CC6633;}
+div.tippanel p  {margin-top: 0;}
+div.tippanel ul {list-style:url(/images/global/bullet_red.gif); padding:0 5px 0 0; margin:0 0 0 1em;}
+div.tippanel ul li{padding-bottom: 0.5em;}
+div.panel h2 {font-size: 1em; color: black; margin-bottom: 0.75em;}
+div#leftcol h2.subsection {background-color: #CC6633; font-size: 1em; color: white; padding: 2px 6px;}
+div.padder {width: 2%; float:left; visibility: hidden;}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/* NEW/CHANGED BLOCK - Items listed here are new styles for review after one month*/
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+ul.simple{margin: 0; padding: 0; list-style:none;}
+
+/*added by JO*/
+.generic-border{border:1px solid #000;}
+.inline-list{padding:0 0 1em 0 !important;margin:0 !important;list-style-type:none;}
+.inline-list ul{padding:0 !important;margin:0 !important;list-style-type:none;}
+.inline-list li,.inline-list ul{display:inline;}
+
+/*generic arrow classes added by JO*/
+.arrowleft{background:url(/images/arrows/arrowleft.gif) no-repeat center left;padding-left:15px;}
+.arrowdown{background:url(/images/arrows/arrowdown.gif) no-repeat center left;padding-left:15px;}
+
+ul.popup-list{list-style:none !important;list-style-type:none !important;padding-left:0px !important;margin:2em 0px 0px 0px !important;}
+ul.popup-list:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+ul.popup-list {display: inline-table;}
+/* Hides from IE-mac \*/
+* html ul.popup-list {height: 1%;}
+ul.popup-list {display: block;}
+/* End hide from IE-mac */
+
+.popup-list{width:100%;}
+.popup-list li{width:50%;float:left;padding-bottom:20px;_height:14em;min-height:14em;}
+.popup-list li a{float:left;display:block;background:url(/images/appmenu/vertical_enlarge_off.gif) no-repeat 0px 86px;overflow:hidden;height:112px;margin-right:10px;}
+.popup-list a.catalogue-link{display:inline;float:none;background:url(/images/icons/cataloguelink.gif) no-repeat top right;margin:0px;padding-right:18px;}
+/*IE6 doesn't wrap links and place the background image in the right place -- so set this to display:inline-block for IE*/
+.popup-list a.catalogue-link{_display:inline-block;width:auto;height:1em;overflow:visible;}
+.popup-list li a img{display:block;border:1px solid #000;margin-bottom:50px;}
+.popup-list li p{float:left;width:90%;color:#663;font-size:85% !important;font-family:Verdana, Arial, Helvetica, sans-serif;padding:0px; margin:0px;}
+
+table.row-border td, table.row-border th{border-bottom:1px solid #ccc;padding:5px 10px 5px 0px !important;vertical-align:top;text-align:left;}
+table.row-border caption{display:none;}
+
+.currentpage{font-family:Verdana, Arial, Helvetica,sans-serif;font-weight:bold;color:#000000}
+a.pagenumbers{font-family:Verdana, Arial, Helvetica,sans-serif;font-weight:normal;color:#000000;text-decoration:underline}
+
+div.paging { text-align: right; font-size: 0.9em; line-height: 1.5em;}
+div.paging select {margin-right: 1em;}
+div.paging img, div.paging input { top: 5px;}
+
+
+/*Form Styles (APPLICATION)*/
+/*login form*/
+div.login label {font-weight: bold; width: 7em; display:block; float: left; line-height: 1.5em; text-align:right;}
+div.login input.txtfield {width: 180px;}
+div.login {margin: 0 auto; width:330px; text-align:center;}
+
+ul.rss li{margin-bottom: 0.5em;}
+ul.rss li a{font-weight: bold;}
+
+.rssicon {background: url(/images/home-img/btn-rss.gif) no-repeat top right; padding-right: 18px;}
+.rssdesc {color: #666; margin:4px 0 0 0;}
+.rsslink {border: solid 1px #E8E1BB; padding:0 2px; margin: 4px 0 16px 0; font-weight: normal; color: #663333; background-color: #F3F0DD;}
+
+/*END-----------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/* REVIEW BLOCK - Items listed here are open for review among the team */
+/*--------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+div#pagecontent .definitionheading {margin-top:20px; text-align:left; font-weight: bold;}
+/* this style brings the heading about a definition tag closer to the definition. Any ideas for better solution? 8?*/
+/*div#pagecontent ul.alphabetlist {float: left; list-style:none !important; padding:0px !important; margin:auto !important; width: 100% !important;}*/
+div#pagecontent ul.alphabetlist li{padding:0px!important; font-family: Verdana, Arial, Helvetica, sans-serif; margin:20px 0 10px 0!important; color: #CB0D07; font-weight: normal; list-style-type: none;}
+div#pagecontent ul.alphabetlist li span.letter {font-size: 3.5em;}
+div#pagecontent ul.alphabetlist li ul li{font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1em !important; padding:0; margin:10px 0 4px 60px!important; list-style: disc; color: #000;}
+div#pagecontent ul.alphabetlist li ul li a{font-size: 1em !important}
+div#pagecontent ul.alphabetlist li ul li ul li{font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1em !important; padding:0; margin:4px 0 4px 0px!important; list-style: circle; color: #000;}
+div#pagecontent ul.alphabetlist li ul li a ul li{font-size: 1em !important;}
+
+/*div#pagecontent ul.definitionlist {float: left; list-style:none !important; padding:0px !important; margin:auto !important; width: 100% !important;}*/
+div#pagecontent ul.definitionlist li{padding:0px; font-family: Verdana, Arial, Helvetica, sans-serif; margin:20px 0 10px 0!important; color: #CB0D07; font-weight: normal; list-style-type: none;}
+div#pagecontent ul.definitionlist li span.letter {font-size: 3.5em; }
+div#pagecontent ul.definitionlist li ul li{font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 1em !important; padding:0; margin:10px 0 4px 60px!important; list-style: none; color: #000;}
+div#pagecontent ul.definitionlist li ul li dl{font-size: 1em !important}
+div#pagecontent ul.definitionlist li ul li dt{font-size: 1em !important}
+div#pagecontent ul.definitionlist li ul li dd{font-size: 1em !important}
+
+/*END-----------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+/* RSS feed link styles */
+div#rssLink {text-align: right; margin-top: -30px;}
+
+
+/*Header*/
+#hdr { background-color: #fff; width: 100%; clear:both; padding:0 0 0 0!important; margin:0.8em 0 0.8em 0!important; display:inline-block; position:relative; }
+#hdr ul.hidden {position:absolute; left:-999em; visibility:hidden; }
+#hdr-logo-holder {float: left;padding: 1.2em 0 0 2.083333%; width:33.020833%;  }
+#hdr #hdr-logo-holder img {border:none; width:100%;}
+#hdr-logo-holder a, #hdr-logo-holder a:hover{border:none;}
+#hdr-personalisation {padding: 0 0 3px 0!important; margin:0 0 0 0!important;  font-size:0.9em; display:inline}
+#hdr-searchform-holder { padding: 0.6em 0 0.6em 0; float:right!important; margin:0 0 0 0; display:inline-block; width:100%; float:right; }
+#hdr-searchform-holder form {margin:0; }
+#hdr-searchform-holder fieldset {border: none; padding:0; margin:0 0 0 0; float:right; width:100% }
+#hdr-searchform-holder fieldset legend { display:none;  padding:0 0 0 0!important; margin:0 0 0 0!important;}
+#hdr-searchform-holder label { display:none; padding:0; margin:0;} 
+#hdr-searchform-holder #search_text, #hdr-searchform-holder .search_text {border: 1px solid #999; background-image: url(/images/global/sitesearch-bg.gif); padding:3px 4px 4px 4px; margin:0 90px 0 0!important; height:16px;  color:#333; width: 38.5416%; font-family:Verdana, Geneva, sans-serif; float:right;}
+/*html>body #hdr-searchform-holder #search_text {*margin:-1px 0 0 0}*/
+#hdr-searchform-holder #search_button {margin:0 0 0 0; position:absolute!important; right:20px!important;}
+#hdr-searchform-holder #ctl00_search_button {margin:0 0 0 0; position:absolute!important; right:20px!important;}
+#hdr-searchform-holder #hdr-advanced-search {float:right; padding:3px 0 0 0; clear:both; font-size:0.9em;}
+#hdr a { color: #0066cc; font-weight:normal;}
+#hdr a:hover, #hdr a:focus, #hdr a:active {color: #cc0000; text-decoration: underline; font-weight:normal;}
+#hdr .cookieInfo  {padding: 0 0 3px 0!important; margin:0 0 0 0!important; font-size:0.9em;display:inline; }
+#hdr .accountLinks {float:right;}
+#hdr #searchTools {float:right; width:50%; padding:0 2% 0 0}
+
+
+/*Menu*/
+#main-navigation {width:100%; background:#d9d9d9 url(/images/global/main-menu-bg.gif) bottom repeat-x;list-style:none;border-bottom:#c41d28 4px solid!important;}
+#main-navigation div.accesskeys {position:absolute; left: -999em;}
+#main-navigation div.accesskeys ul li {display: inline; list-style: none;}
+#main-menu-wrapper {min-height: 2.5em; width:760px; margin:0 auto; background:#d9d9d9 url(/images/global/main-menu-bg.gif) bottom repeat-x;}
+#main-menu {line-height:1.7em; background:#e5e5e5; margin:0; padding:0; text-align:left;}
+#main-menu ul, #main-menu li {list-style:none; margin:0; padding:0;}
+#main-menu a {display:block; color:#000; text-decoration:none; padding:5px 20px 5px 20px;}
+#main-menu li {float:left; border-right:1px solid #a2a2a2; border-left:1px solid #fafafa;}
+#main-menu li ul {position:absolute; left:-999em; width:16em; font-weight:normal; background:#e7e7e7 url(/images/global/main-menu-child-bg.jpg) repeat-x bottom; border-top:#c41d28 4px solid; z-index:1000;}
+#main-menu li li {padding:0; width: 15.9em; border:solid #a2a2a2; border-width:0 1px 1px 1px;}
+#main-menu li ul a {padding:2px 8px 2px 8px; font-weight:normal; width:90%;}
+#main-menu li ul ul {margin:-1.75em 0 0 14em; border-top:1px solid #a2a2a2;}
+#main-menu li:hover ul ul, #main-menu li:hover ul ul ul {left:-999em;}
+#main-menu li:hover ul, #main-menu li li:hover ul, #main-menu li li li:hover ul {left:auto;}
+#main-menu li:hover {background:#c41d28;}
+#main-menu li#first-left { border-left:none !important;}
+#main-menu li#last-right { border-right:none !important;}
+#main-menu a:focus, #main-menu a:hover {color:#fff;}
+#main-menu a:active {color:#000;}
+#main-menu li:hover a.parent-link {color:#fff;}
+#main-menu li li:hover a.child-link {color:#fff;}
+#main-menu a.current {background-color: #c41d28; color: #fff;}
+/* JavaScript controlled menu, for IE6 and keyboard navigation (by tab key) */
+#main-menu li.js-show a.parent-link {color:#fff;}
+#main-menu li li.js-show a.child-link {color:#fff;}
+#main-menu li.js-show ul {left:auto;}
+#main-menu li.js-show li ul {left:-999em;}
+#main-menu li li.js-show ul {left:auto;}
+#main-menu li.js-show {background:#c41d28;}
+
+/*Footer*/
+* html #ftr {height: 1px;}
+#ftr { background:#fff; border-top: 4px solid #D9D9D9; border-bottom: 2px solid #D9D9D9; clear:both; font-size:0.9em; margin: 0; text-align: center; }
+#ftr a {padding: 0 10px 0 0; text-decoration: none; color: #000000;}
+#ftr a:hover {text-decoration: underline;}
+#ftr-footer-links-wrapper {margin: 0 20px 0 20px; list-style:none;}
+#ftr-footer-links-wrapper div {float: left; width: 229px; border-left: 1px dotted #e5e5e5; text-align:left;}
+#ftr-footer-links-wrapper h4 {padding:0 0 0 10px; margin:0 0 0 0; font-size:1.2em; font-weight:700; line-height:150%; font-family:Verdana, Arial, Helvetica, sans-serif;}
+#ftr-footer-links-wrapper ul {list-style:none; list-style-image:none; list-style-position:outside; list-style-type:none; padding:0 0 0 10px; margin:0;}
+#ftr-footer-links-wrapper li {list-style:none; list-style-image:none; list-style-position:outside; list-style-type:none; padding: 0; margin: 0;}
+.ftr-footer-spacer {clear: both; height: 20px;}
+#ftr-footer-contact-bar { clear: both; background-color: #EEEEEE; padding: 12px 0 12px 0; font-size: 1em; }
+#ftr-footer-contact-bar a {text-decoration: underline; color:#0066cc;}
+#ftr-footer-contact-bar a:hover{color: #cc0000; text-decoration: underline;}
+
+/*Arrows*/
+
+.red-arrow-large {background:url(/images/arrow-red-large.gif) right no-repeat;  display: inline; padding:7px 6px 9px 6px; height:0px; width:0px;}
+.red-arrow {background:url(/images/arrow-red.gif) right no-repeat;  display: inline; padding:7px 6px 8px 6px; height:0px; width:0px;}
+.white-arrow {background: url(/images/arrow-white.gif) right no-repeat; display: inline; padding:9px 6px 9px 6px; height:0px; width:0px;}
+.black-arrow {background: url(/images/arrow-black.gif) right no-repeat; display: inline; padding:7px 6px 8px 6px; height:0px; width:0px;}
+.pink-arrow {background: url(/images/arrow-pink.gif) right no-repeat; display: inline; padding:7px 6px 8px 6px; height:0px; width:0px;}
+.green-arrow {background: url(/images/arrow-green.gif) right no-repeat; display: inline; padding:7px 6px 8px 6px; height:0px; width:0px;}
+.purple-arrow {background: url(/images/arrow-purple.gif) right no-repeat;display: inline; padding:7px 6px 8px 6px; height:0px; width:0px;}
+
+/* For IE6 */
+* html .red-arrow-large,* html .white-arrow,* html .red-arrow,* html .black-arrow,* html .pink-arrow,* html .green-arrow,* html .purple-arrow{display:inline-block;margin-top:2px;padding: 1px 6px 1px 6px;margin-bottom:0px;}
+/* For IE7 - doesn't display arrows without line-block */
+html>body .red-arrow-large, .white-arrow, .red-arrow, .black-arrow, .pink-arrow, .green-arrow, .purple-arrow{*display: inline-block;}
+
+/* START OF Global Search */
+
+#linksToSearchForms {
+	display: none;
+}
+
+
+#tnaSearchWrapper {
+	position: relative;
+}
+
+#tnaSearchWrapper form {
+	padding: 0.5em;
+	display: none;
+	overflow: visible;
+}
+
+#linksToSearchForms {
+	margin-bottom: 1em;
+	color: #777;
+}
+
+#linksToSearchForms a {
+	margin: 0 5px;
+}
+
+#tnaSearchWrapper form label {
+	display: none;
+}
+
+#searchFormOptions {
+	background-color: #EFEFEF;
+	border: 1px solid #CDCDCD;
+	border-top-color: transparent;
+	width: 40%;
+	padding: 0.5em;
+	position: absolute;
+	left: 6em;
+	top: 2.6em;
+	*left: 6.75em;
+	*top: 2.2em;
+	text-align: left;
+	z-index: 999999;
+}
+
+#searchFormOptions.noJavaScript {
+	display: none;
+}
+
+
+#searchOptions {
+	margin: 0;
+	padding: 0;
+}
+
+#searchOptions li {
+	cursor: pointer;
+	color: #444;
+	padding-bottom: 1px;
+	padding-left: 10px;
+	border-radius: 3px;
+	list-style-type: none;
+}
+
+
+
+#searchOptions li:hover {
+	background-color: #383838;
+	color: #fff;
+}
+
+#otherSearches a:hover {
+	text-decoration: underline;
+}
+
+#containingBox {
+	display: inline-block;
+	border: 1px solid #898989;
+	border-radius: 0px 3px 3px 0px;
+	background-color: #fff;
+	padding: 0;
+	height: 23px;
+}
+
+#tnaSearch {
+	outline: none;
+	padding: 3px 3px 2px 3px;
+	border: 1px solid transparent;
+	margin: 0;
+	width: 14em;
+	color: #333;
+	vertical-align: top;
+	margin-right: -5px;
+}
+
+
+#searchOptionToggler {
+	display: inline-block;
+	vertical-align: top;
+	color: #fff;
+	margin-top: 4px;
+	padding-right: 16px;
+}
+
+#searchOptionToggler.collapsed {
+	width: 11.2em;
+	text-align: right;
+	margin-right: 0.4em;
+	cursor: pointer;
+	background: url("/images/global/more.png") no-repeat scroll right center transparent;
+}
+
+#searchOptionToggler.expanded {
+	width: 11.2em;
+	text-align: right;
+	cursor: pointer;
+	margin-right: 0.4em;
+	background: url("/images/global/less.png") no-repeat scroll right center transparent;
+}
+
+#userControls {
+color: #777;
+font-size: 0.9em;
+_position: relative;
+}
+
+
+	#userControls {
+		position: absolute;
+		top: 3em;
+		text-align: right;
+		right: 1em;
+	}
+
+	#tnaSearchWrapper form {
+		position: absolute;
+		top: -10px;
+		right: 10px;
+		_right: -450px;
+		width: 32em;
+		display: block;
+		background: rgb(254,254,254); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(254,254,254,1) 0%, rgba(239,239,239,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,254,254,1)), color-stop(100%,rgba(239,239,239,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(254,254,254,1) 0%,rgba(239,239,239,1) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(254,254,254,1) 0%,rgba(239,239,239,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(254,254,254,1) 0%,rgba(239,239,239,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(254,254,254,1) 0%,rgba(239,239,239,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+		border: 1px solid #CDCDCD;
+		border-top-color: #EFEFEF;
+		border-radius: 0 0 2px 2px;
+	}
+
+	#searchOptionToggler {
+		color: #383838;
+	}
+
+div.search-refinements {
+	display: none;
+}
+
+
+
+/*END OF Global search*/

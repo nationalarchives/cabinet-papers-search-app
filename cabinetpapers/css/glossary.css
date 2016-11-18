@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* Cabinet Papers website, The National Archives */
+/* Author: Roumiana Kurktchian, November 2008 */
+
+
+a.glossary {text-decoration:none;border-bottom:1px dashed #663333;}
+a.glossary:hover {background:#ffffff;cursor:help;}
+a.glossary span {display:none; padding:2px 3px; margin-top:10px; width:200px;max-width:250px; color:black; font-size:80%;} 
+a.glossary:hover span {display:block;position:absolute; background:#f0f0f0;border:2px double #909090; z-index:10;margin:15px 10px 10px 2px;} 
+
+.term {
+  font-weight: bold;
+  padding-top:10px;padding-right:20px;
+  border-top:2px solid #ebebea;
+}
+
+.description {font-weight: normal;
+  position:relative;
+  left:15px;
+  padding-bottom:10px; padding-right:20px;
+}
+.glossary-bgcolor {
+  width:750px;
+  text-align: center;
+  background:#eaeaea;padding:10px 5px 10px 5px;
+}
