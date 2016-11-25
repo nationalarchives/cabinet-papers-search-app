@@ -685,6 +685,14 @@ div.radio-container label {
     /*text-transform: capitalize;*/
 }
 
+.multitab-widget-content-tabs-id {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 
 /* End Footer css */
 

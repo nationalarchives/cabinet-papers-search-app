@@ -63,4 +63,6 @@ $(document).ready(function($){
         });
     });
 
+    $( "ul.multitab-widget" ).addClass( "show" );
+
 });
