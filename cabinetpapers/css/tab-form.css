@@ -25,9 +25,10 @@ div.breather > form > p {
 }
 
 section {
-    display: none;
+    /*display: none;*/
     /*padding: 20px 0 0;*/
     border-top: 1px solid #ddd;
+    margin-top: 4em;
 }
 
 section#content1 h3, section#content2 h3 {
@@ -104,7 +105,7 @@ input[type=submit] {
 
 div.filter-container {
     margin-left: 16em;
-    width: 56%;
+    width: 52%;
 }
 
 input[type=submit]:hover {
@@ -134,7 +135,7 @@ div.breather {
     /*border-radius: 5px;*/
     background-color: #f2f2f2;
     padding: 25px;
-    overflow: auto;
+    /*overflow: auto;*/
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
@@ -177,7 +178,6 @@ form .main , form .main:hover {
     cursor: default;
     color: #555;
     width: 150px;
-    height: 4em;
     line-height: 20px;
 }
 
@@ -375,7 +375,6 @@ div.help-box p {
 
 div.radio-container {
     display: inline-block;
-    float: right;
 }
 
 div.radio-container input {
@@ -611,6 +610,89 @@ div.radio-container label {
     width: 22.5%;
     margin-top: 20px;
 }
+
+
+
+.container {
+    /*max-width: 310px;*/
+    /*margin: 8% auto;*/
+    padding: 0;
+    /*box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.1);*/
+    font-family: 'Open Sans', sans-serif;
+}
+/* Multi Tab Sidebar */
+
+.multitab-section {
+    display: inline-block;
+    /*text-transform: uppercase;*/
+    width: 100%;
+}
+
+.multitab-section p {
+    display: inline-block;
+    text-transform: lowercase;
+    font-size: 14px;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.multitab-widget {
+    list-style: none;
+    margin: 0 0 10px;
+    padding: 0
+}
+
+.multitab-widget li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left
+}
+
+.multitab-widget li a {
+    background: #ddd;
+    color: #444;
+    display: block;
+    padding: 15px;
+    font-size: 13px;
+    text-decoration: none
+}
+
+.multitab-tab {
+    width: 33.3%;
+    text-align: center
+}
+
+.multitab-section h2,
+.multitab-section h3,
+.multitab-section h4,
+.multitab-section h5,
+.multitab-section h6 {
+    display: block;
+}
+
+.multitab-widget li a.multitab-widget-current {
+    /*padding-bottom: 20px;*/
+    /*margin-top: -10px;*/
+    background: #f2f2f2;
+    color: #444;
+    text-decoration: none;
+    border-top: 2px solid red;
+    font-size: 14px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    font-weight: bold;
+    /*text-transform: capitalize;*/
+}
+
+.multitab-widget-content-tabs-id {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 
 /* End Footer css */
 

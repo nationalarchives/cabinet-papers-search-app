@@ -138,38 +138,41 @@
         </span>
         </div>
         <h2>Search</h2>
-        <input id="tab1" type="radio" name="tabs" value="12" checked>
-        <label id="tabLabel1" for="tab1">Cabinet papers</label>
-        <input id="tab2" type="radio" name="tabs" value="34">
-        <label id="tabLabel2" for="tab2">Education resources</label>
-        <section id="content1">
+        <div class="container">
+            <div class='multitab-section'>
+                <ul class='multitab-widget multitab-widget-content-tabs-id'>
+                    <li class='multitab-tab'><a href='#multicolumn-widget-id1'>Cabinet papers</a></li>
+                    <li class='multitab-tab'><a href='#multicolumn-widget-id2'>Education resources</a></li>
+                </ul>
+                <div class='multitab-widget-content multitab-widget-content-widget-id' id='multicolumn-widget-id1'>
+                    <section id="content1">
 
-            <div class="breather">
-                <form action="#">
+                    <div class="breather">
+                    <form action="#">
                     <h3>Find original documents containing:</h3>
                     <div class="clear"></div>
 
                     <div class="subFields">
-                        <label class="main" for="exactwords">All of these words</label>
-                        <input type="text" id="exactwords" name="exactwords" required="required">
+                    <label class="main" for="exactwords">All of these words</label>
+                    <input type="text" id="exactwords" name="exactwords" required="required">
 
-                        <div class="clear"></div>
-                        <p class="andOr">and / or</p>
-                        <div class="clear"></div>
+                    <div class="clear"></div>
+                    <p class="andOr">and / or</p>
+                    <div class="clear"></div>
 
-                        <label class="main" for="exactphrase">The exact phrase</label>
-                        <input type="text" id="exactphrase" name="exactphrase">
+                    <label class="main" for="exactphrase">The exact phrase</label>
+                    <input type="text" id="exactphrase" name="exactphrase">
 
-                        <div class="clear"></div>
-                        <p class="andOr">and / or</p>
-                        <div class="clear"></div>
+                    <div class="clear"></div>
+                    <p class="andOr">and / or</p>
+                    <div class="clear"></div>
 
-                        <label for="anyword_box1" class="main">At least one of these words</label>
-                        <input type="text" class="anywords" name="anywords_box1" id="anyword_box1">
-                        <label for="anyword_box2" class="main visuallyHidden">At least one of these words</label>
-                        <input type="text" class="anywords" name="anywords_box2" id="anyword_box2">
-                        <label for="anyword_box3" class="main visuallyHidden">At least one of these words</label>
-                        <input type="text" class="anywords" name="anywords_box3" id="anyword_box3">
+                    <label for="anyword_box1" class="main">At least one of these words</label>
+                    <input type="text" class="anywords" name="anywords_box1" id="anyword_box1">
+                    <label for="anyword_box2" class="main visuallyHidden">At least one of these words</label>
+                    <input type="text" class="anywords" name="anywords_box2" id="anyword_box2">
+                    <label for="anyword_box3" class="main visuallyHidden">At least one of these words</label>
+                    <input type="text" class="anywords" name="anywords_box3" id="anyword_box3">
                     </div>
                     <div class="clear"></div>
 
@@ -177,23 +180,23 @@
 
                     <label class="main">Filter by document type</label>
                     <div class="filter">
-                        <div class="filter-container">
-                            <input id="all" type="checkbox" checked="checked" disabled="disabled"/>
-                            <label for="all">All</label>
-                            <input id="memoranda" type="checkbox" name="filter[]"/>
-                            <label for="memoranda">Memoranda</label><a href="#" class="has-tooltip" data-tooltip="Memoranda include policy proposals and positions taken by ministers or government departments."><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
-                        </a>
-                            <input id="conclusions" type="checkbox" name="filter[]"/>
-                            <label for="conclusions">Conclusions</label><a href="#" class="has-tooltip" data-tooltip="Conclusions include cabinet discussions and agreed action points."><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
-                        </a>
-                            <input id="precedentbooks" type="checkbox" name="filter[]"/>
-                            <label for="precedentbooks">Precedent Books</label><a href="#" class="has-tooltip" data-tooltip="Precedent books include policy on how the Cabinet works."><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
-                        </a>
-                            <input id="notebooks" type="checkbox" name="filter[]"/>
-                            <label for="notebooks">Notebooks</label>
-                            <a href="#" class="has-tooltip" data-tooltip="Notebooks include transcripts of cabinet discussions revealing a minister's stance before consensus."><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
-                            </a>
-                        </div>
+                    <div class="filter-container">
+                    <input id="all" type="checkbox" checked="checked" disabled="disabled"/>
+                    <label for="all">All</label>
+                    <input id="memoranda" type="checkbox" name="filter[]"/>
+                    <label for="memoranda">Memoranda</label><a href="#" class="has-tooltip" data-tooltip="Memoranda include policy proposals and positions taken by ministers or government departments."><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                    </a>
+                    <input id="conclusions" type="checkbox" name="filter[]"/>
+                    <label for="conclusions">Conclusions</label><a href="#" class="has-tooltip" data-tooltip="Conclusions include cabinet discussions and agreed action points."><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                    </a>
+                    <input id="precedentbooks" type="checkbox" name="filter[]"/>
+                    <label for="precedentbooks">Precedent Books</label><a href="#" class="has-tooltip" data-tooltip="Precedent books include policy on how the Cabinet works."><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                    </a>
+                    <input id="notebooks" type="checkbox" name="filter[]"/>
+                    <label for="notebooks">Notebooks</label>
+                    <a href="#" class="has-tooltip" data-tooltip="Notebooks include transcripts of cabinet discussions revealing a minister's stance before consensus."><i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                    </a>
+                    </div>
                     </div>
 
                     <div class="clear"></div>
@@ -201,48 +204,55 @@
                     <div class="clear"></div>
                     <label class="main date">Date</label>
                     <div class="dateSection">
-                        <div class="date-group">
-                            <input type="text">
-                            <span class="inline">to</span>
-                            <input type="text">
-                            <!--<span class="inline">(yyyy)</span>-->
-                        </div>
+                    <div class="date-group">
+                    <input type="text">
+                    <span class="inline">to</span>
+                    <input type="text">
+                    <!--<span class="inline">(yyyy)</span>-->
+                    </div>
                     </div>
                     <hr>
                     <label class="main">Search within</label>
                     <!--<div class="clear"></div>-->
                     <div class="filter">
-                        <div class='radio-container'>
-                            <label>
-                                <input type='radio' name='searchwithin' value='wholeDocument' />Whole document
-                                <a href="#" class="has-tooltip" data-tooltip="For results that contain search terms in the content of the document">
-                                    <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
-                                </a>
-                            </label>
-                            <label>
-                                <input type='radio' name='searchwithin' value='docDesc' />Document description only
-                                <a href="#" class="has-tooltip" data-tooltip="For results that only contain search terms in the document's agenda and attendee list (conclusions), title, author and date">
-                                    <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
-                                </a>
-                            </label>
-                        </div>
+                    <div class='radio-container'>
+                    <label>
+                    <input type='radio' name='searchwithin' value='wholeDocument' />Whole document
+                    <a href="#" class="has-tooltip" data-tooltip="For results that contain search terms in the content of the document">
+                    <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                    </a>
+                    </label>
+                    <label>
+                    <input type='radio' name='searchwithin' value='docDesc' />Document description only
+                    <a href="#" class="has-tooltip" data-tooltip="For results that only contain search terms in the document's agenda and attendee list (conclusions), title, author and date">
+                    <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+                    </a>
+                    </label>
+                    </div>
                     </div>
                     <div class="clear"></div>
 
                     <input type="submit" value="Search">
-                </form>
+                    <div class="clear"></div>
+                    </form>
+                    </div>
+                    </section>
+                </div>
+                <div class='multitab-widget-content multitab-widget-content-widget-id' id='multicolumn-widget-id2'>
+                    <section id="content2">
+                        <div class="breather">
+                            <form action="#">
+                                <h3>Search by word or phrase</h3>
+                                <label class="visuallyHidden" for="websearch">Search by word or phrase</label>
+                                <input type="text" id="websearch" name="websearch" required="required">
+                                <input type="submit" value="Search">
+                                <div class="clear"></div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </section>
-        <section id="content2">
-            <div class="breather">
-                <form action="#">
-                    <h3>Search by word or phrase</h3>
-                    <label class="visuallyHidden" for="websearch">Search by word or phrase</label>
-                    <input type="text" id="websearch" name="websearch" required="required">
-                    <input type="submit" value="Search">
-                </form>
-            </div>
-        </section>
+        </div>
     </div>
     <br/>
 </div>
