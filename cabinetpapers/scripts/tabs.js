@@ -12,27 +12,27 @@ $(document).ready(function($){
 
     //Checkboxes
     $(this).click(function () {
-        if ($("input[name='filter[]']").is(':checked')) {
+        if ($("input[data-name='filter[]']").is(':checked')) {
             $('#all').prop('checked',false);
         }
-        if ($("input[name='filter[]']:checked").length == $("input[name='filter[]").length) {
+        if ($("input[data-name='filter[]']:checked").length == $("input[data-name='filter[]").length) {
             $('#all').prop('checked',true);
-            $("input[name='filter[]']").prop('checked',false);
+            $("input[data-name='filter[]']").prop('checked',false);
         }
-        if ($("input[name='filter[]']:checked").length == 0) {
+        if ($("input[data-name='filter[]']:checked").length == 0) {
             $('#all').prop('checked',true);
             //$("input[name='filter[]']").prop('checked',false);
         }
         if ($('#all').attr('checked')) {
             $('#all').attr('disabled', false);
         }
-        if ($("input[name='filter[]']:checked").length <= 1) {
+        if ($("input[data-name='filter[]']:checked").length <= 1) {
             $("#all").prop("disabled", false);
             //$('#all').prop('checked',false);
         }
         $('#all').change(function(){
             $(this).prop('checked',true);
-            $("input[name='filter[]']").prop('checked',false);
+            $("input[data-name='filter[]']").prop('checked',false);
         });
     });
 
