@@ -64,15 +64,39 @@
 <div class="OuterWrapper">
     <div class="header">
         <div id="hdr">
+            <script src="/cabinetpapers/scripts/jquery-latest.js" type="text/javascript"></script>
+            <script src="/cabinetpapers/scripts/global-search.js" type="text/javascript"></script>
+            <script src="/cabinetpapers/scripts/hdr-search-utils.js" type="text/javascript"></script>
             <div id="hdr-logo-holder">
                 <a href="/default.htm" title="The National Archives">
                     <img src="/images/global/hdr-logo.gif" alt="The National Archives" title="The National Archives">
                 </a>
             </div>
-            <!--<ul class="hidden">-->
-            <!--<li><a href="#content" accesskey="s">Skip to Content</a></li>-->
-            <!--<li><a href="/help/accesskeys.htm" accesskey="0">List of Access Keys</a></li>-->
-            <!--</ul>-->
+            <ul class="hidden">
+                <li><a href="#content" accesskey="s">Skip to Content</a></li>
+                <li><a href="/help/accesskeys.htm" accesskey="0">List of Access Keys</a></li>
+            </ul>
+            <div id="searchTools">
+                <div id="linksToSearchForms"><a href="/search/results">Search the website</a> | <a href="http://www.discovery.nationalarchives.gov.uk">Search the catalogue</a></div>
+                <div id="tnaSearchWrapper">
+                    <div id="tnaSearchWrapperInner">
+                        <form action="/search/results" method="get" id="globalSearch">
+                            <label for="tnaSearch">Search the archives</label>
+                            <span id="searchOptionToggler" class="collapsed">Search our website</span>
+                            <span id="containingBox">
+                                <input type="text" id="tnaSearch" name="_q" required="" aria-required="true">
+                                <input type="image" id="tnaSearchSubmit" src="/images/global/searchButtonImage.png">
+                            </span>
+                        </form>
+                    </div>
+                    <div id="searchFormOptions" class="noJavaScript">
+                        <ul id="searchOptions">
+                            <li>Search our website</li>
+                            <li>Search our records</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -102,7 +126,9 @@
             </a>
         </div>
         <div id="Toolbar">
-            <div id="help"><a href="/cabinetpapers/help.htm" class="help">Help</a></div>
+            <!--<div id="help"><a href="/cabinetpapers/help.htm" class="help">Help</a></div>-->
+            <div id="help">&nbsp;</div>
+            <div id="searchbar" class="clearfix"><a href="/cabinetpaperssearch/">Search documents and resources</a> | <a href="/cabinetpapers/help/search-tips.htm">Search tips</a></div>
         </div>
     </div>
     <div id="index-block">

@@ -691,6 +691,58 @@ div.radio-container label {
     display: block;
 }
 
+#searchbar {
+    float: right;
+    margin: 0.4em 1.4em 0 0;
+    width: 700px;
+    text-align: right;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+}
+
+#globalSearch {
+    height: 29px;
+}
+
+#containingBox #tnaSearch {
+    height:16px;
+    width: 10.5em;
+}
+
+#hdr #searchTools {
+    float: right;
+    width: 50%;
+    padding: 0 2% 0 0;
+}
+
+#tnaSearchWrapper form {
+    padding: 0.5em;
+    display: none;
+    overflow: visible;
+}
+
+#tnaSearchWrapper form {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    _right: -450px;
+    width: 32em;
+    display: block;
+    background: rgb(254,254,254);
+    background: -moz-linear-gradient(top, rgba(254,254,254,1) 0%, rgba(239,239,239,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,254,254,1)), color-stop(100%,rgba(239,239,239,1)));
+    background: -webkit-linear-gradient(top, rgba(254,254,254,1) 0%,rgba(239,239,239,1) 100%);
+    background: -o-linear-gradient(top, rgba(254,254,254,1) 0%,rgba(239,239,239,1) 100%);
+    background: -ms-linear-gradient(top, rgba(254,254,254,1) 0%,rgba(239,239,239,1) 100%);
+    background: linear-gradient(to bottom, rgba(254,254,254,1) 0%,rgba(239,239,239,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#efefef',GradientType=0 );
+    border: 1px solid #CDCDCD;
+    border-top-color: #EFEFEF;
+    border-radius: 0 0 2px 2px;
+}
 
 /* End Footer css */
 
